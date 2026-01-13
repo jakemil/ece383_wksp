@@ -1,0 +1,15 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 87562dd92e4446c1a9c2a9e8a02e42e1 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot priority_encoder_tb_behav xil_defaultlib.priority_encoder_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.priority_encoder [priority_encoder_default]
+Compiling architecture behavioral of entity xil_defaultlib.priority_encoder_tb
+Built simulation snapshot priority_encoder_tb_behav
