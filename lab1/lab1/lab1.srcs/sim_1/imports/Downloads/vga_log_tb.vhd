@@ -28,7 +28,7 @@ architecture tb of vga_log_tb is
   constant CLK_PERIOD : time := 40 ns; -- 25 MHz
 
   -- Output filename (created in your simulation working directory)
-  constant LOG_FILENAME : string := "vga_log.txt";
+  constant LOG_FILENAME : string := "vga_log_new.txt";
 
   -- How long to run
   constant RUN_TIME : time := 40 ms;
@@ -43,8 +43,8 @@ architecture tb of vga_log_tb is
 
   -- color_mapper inputs
   signal trigger : trigger_t := (
-    t => (others => '0'),
-    v => (others => '0')
+    t => (TO_UNSIGNED(320,11)),
+    v => (TO_UNSIGNED(220,11))
   );
 
   signal ch1 : channel_t := (active => '0', en => '0');

@@ -13,7 +13,6 @@ entity lab1 is
     Port ( clk : in  STD_LOGIC;
            reset_n : in  STD_LOGIC;
 		   btn: in	STD_LOGIC_VECTOR(4 downto 0);
-		   led: out STD_LOGIC_VECTOR(4 downto 0);
 		   sw: in STD_LOGIC_VECTOR(1 downto 0);
            tmds : out  STD_LOGIC_VECTOR (3 downto 0);
            tmdsb : out  STD_LOGIC_VECTOR (3 downto 0));
@@ -36,9 +35,9 @@ begin
 -- Add numeric steppers for time and voltage trigger
 row_stepper : entity work.numeric_stepper
   generic map(
-    num_bits  => 8,
-    max_value => 480,
-    min_value => 0,
+    num_bits  => 11,
+    max_value => 420,
+    min_value => 20,
     delta     => 10
   )
   port map(
@@ -52,9 +51,9 @@ row_stepper : entity work.numeric_stepper
   
 column_counter : entity work.numeric_stepper
   generic map(
-    num_bits  => 8,
-    max_value => 640,
-    min_value => 0,
+    num_bits  => 11,
+    max_value => 620,
+    min_value => 20,
     delta     => 10
   )
   port map(

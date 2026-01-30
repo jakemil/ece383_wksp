@@ -28,6 +28,8 @@ signal hash_color : color_t := WHITE;
 
 signal is_vertical_gridline, is_horizontal_gridline, is_within_grid, is_trigger_time, is_trigger_volt, is_ch1_line, is_ch2_line,
     is_horizontal_hash, is_vertical_hash : boolean := false;
+signal row_i, col_i : integer;
+signal trig_t_i, trig_v_i : integer;
 
 -- Fill in values here
 constant grid_start_row : integer := 20;
@@ -43,8 +45,8 @@ constant hash_horizontal_spacing : integer := 15;
 constant hash_vertical_spacing : integer := 10;
 constant gridline_horizontal_spacing : integer := 50;
 constant gridline_vertical_spacing : integer := 60;
-constant triangle_half_width : integer := 2;
-constant triangle_height : integer := 3;
+constant triangle_half_width : integer := 5;
+constant triangle_height : integer := 5;
 constant hash_half_length : integer := 2;
 
 begin
@@ -56,19 +58,25 @@ is_vertical_gridline <= true when((position.col - grid_start_col) mod gridline_v
                         else false;
 is_within_grid <= true when (position.row >= grid_start_row and position.row <= grid_stop_row and position.col >= grid_start_col and position.col <= grid_stop_col)
                   else false;
+                  
+row_i    <= to_integer(unsigned(position.row));
+col_i    <= to_integer(unsigned(position.col));
+trig_t_i <= to_integer(unsigned(trigger.t));
+trig_v_i <= to_integer(unsigned(trigger.v));
+
 is_trigger_time <= true when (
-                   (position.row >= grid_start_row) and
-                   (position.row < grid_start_row + triangle_height) and
-                   (abs(signed(position.col) - signed(grid_start_col + trigger.t)) <= signed(triangle_half_width - (position.row - grid_start_row)))
+                   (row_i >= grid_start_row) and
+                   (row_i <  grid_start_row + triangle_height) and
+                   (abs(col_i - trig_t_i) <= (triangle_half_width - (row_i - grid_start_row)))
                    ) else false;
 is_trigger_volt <= true when (
-                   (position.col >= grid_start_col) and
-                   (position.col < grid_start_col + triangle_height) and
-                   (abs(signed(position.row) - signed(grid_start_row + trigger.v)) <= signed(triangle_half_width - (position.col - grid_start_col)))
+                   (col_i >= grid_start_col) and
+                   (col_i <  grid_start_col + triangle_height) and
+                   (abs(row_i - trig_v_i) <= (triangle_half_width - (col_i - grid_start_col)))
                    ) else false;
-is_ch1_line <= true when (position.row = position.col)
+is_ch1_line <= true when (position.row = (440-position.col))
                else false;
-is_ch2_line <= true when (position.row = (440-position.col))
+is_ch2_line <= true when (position.row = position.col)
                else false;
 is_horizontal_hash <= true when ((position.col-grid_start_col) mod hash_horizontal_spacing = "0") and (abs(signed(position.row) - center_row) <= hash_half_length)
                       else false;
