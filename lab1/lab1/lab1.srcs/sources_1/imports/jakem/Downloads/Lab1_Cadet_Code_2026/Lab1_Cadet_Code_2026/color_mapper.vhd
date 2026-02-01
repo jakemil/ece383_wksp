@@ -84,7 +84,7 @@ is_vertical_hash <= true when ((position.row-grid_start_row) mod hash_vertical_s
                     else false;
 
 -- Use your booleans to choose the color
-color <=        trigger_color when (is_trigger_time or is_trigger_volt) else
+color <=        trigger_color when (is_trigger_time or is_trigger_volt) and is_within_grid else
                 gridline_color when ((is_horizontal_gridline or is_vertical_gridline) and is_within_grid) else
                 ch1_color when (is_ch1_line and is_within_grid) else
                 ch2_color when (is_ch2_line and is_within_grid) else
