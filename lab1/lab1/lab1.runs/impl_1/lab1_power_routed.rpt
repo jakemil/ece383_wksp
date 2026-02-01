@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Sat Jan 31 22:37:33 2026
+| Date             : Sat Jan 31 22:57:39 2026
 | Host             : JakesXPS13 running 64-bit major release  (build 9200)
 | Command          : report_power -file lab1_power_routed.rpt -pb lab1_power_summary_routed.pb -rpx lab1_power_routed.rpx
 | Design           : lab1
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.382        |
+| Total On-Chip Power (W)  | 0.383        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.243        |
@@ -53,16 +53,16 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        6 |       --- |             --- |
-| Slice Logic    |    <0.001 |      683 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      369 |    133800 |            0.28 |
+| Slice Logic    |    <0.001 |      672 |       --- |             --- |
+|   LUT as Logic |    <0.001 |      361 |    133800 |            0.27 |
 |   CARRY4       |    <0.001 |       41 |     33450 |            0.12 |
 |   Register     |    <0.001 |      127 |    267600 |            0.05 |
 |   Others       |     0.000 |       19 |       --- |             --- |
-| Signals        |    <0.001 |      464 |       --- |             --- |
+| Signals        |    <0.001 |      450 |       --- |             --- |
 | MMCM           |     0.106 |        1 |        10 |           10.00 |
 | I/O            |     0.133 |       16 |       285 |            5.61 |
 | Static Power   |     0.140 |          |           |                 |
-| Total          |     0.382 |          |           |                 |
+| Total          |     0.383 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 

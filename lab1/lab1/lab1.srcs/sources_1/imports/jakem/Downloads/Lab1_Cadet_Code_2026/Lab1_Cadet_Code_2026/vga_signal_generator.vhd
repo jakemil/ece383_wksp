@@ -52,21 +52,16 @@ vertical_counter : counter
 
 h_sync_is_low <= (current_pos.col >= 655 and current_pos.col < 751);
 v_sync_is_low <= (current_pos.row >= 489 and current_pos.row < 491);
-h_blank_is_low <= (current_pos.col >= 0 and current_pos.col < 639) or (current_pos.col = 799);
 v_blank_is_low <= (current_pos.row >= 0 and current_pos.row < 479) or (current_pos.row = 524);
+h_blank_is_low <= (current_pos.col >= 0 and current_pos.col < 639) or (current_pos.col = 799);
 -- Assign VGA outputs in a gated manner
 process(clk)
  
 begin
-    if(rising_edge(clk)) then
-        --column logic        
+    if(rising_edge(clk)) then      
         vga.hsync <= '0' when h_sync_is_low else '1';
- 
-        --row logic
         vga.vsync <= '0' when v_sync_is_low else '1';
-        --blank logic
         vga.blank <= '0' when (h_blank_is_low and v_blank_is_low) else '1';
-
     end if;
 end process;
 
