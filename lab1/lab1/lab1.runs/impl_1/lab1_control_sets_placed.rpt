@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Sat Jan 31 22:54:24 2026
+| Date         : Sat Jan 31 23:54:36 2026
 | Host         : JakesXPS13 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file lab1_control_sets_placed.rpt
 | Design       : lab1
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              63 |           19 |
+| No           | No                    | No                     |              63 |           17 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              25 |           10 |
-| Yes          | No                    | No                     |              10 |            7 |
+| No           | Yes                   | No                     |              25 |           12 |
+| Yes          | No                    | No                     |              10 |            5 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              29 |           14 |
+| Yes          | Yes                   | No                     |              29 |           15 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -76,15 +76,15 @@ Table of Contents
 |  vid/mmcm_adv_inst_display_clocks/inst/clk_out1 |                                                   | vid/Inst_vga/sig_gen/horizontal_counter/processQ[8]_i_1__0_n_0 |                1 |              1 |         1.00 |
 |  clk_IBUF                                       |                                                   |                                                                |                3 |              4 |         1.33 |
 |  clk_IBUF                                       | row_stepper/process_q[7]_i_1_n_0                  | column_counter/reset_n                                         |                2 |              4 |         2.00 |
-|  clk_IBUF                                       | column_counter/process_q[8]_i_1__0_n_0            |                                                                |                4 |              4 |         1.00 |
+|  clk_IBUF                                       | column_counter/process_q[8]_i_1__0_n_0            |                                                                |                2 |              4 |         2.00 |
 |  vid/mmcm_adv_inst_display_clocks/inst/clk_out2 |                                                   | vid/inst_dvid/shift_red[7]_i_1_n_0                             |                1 |              5 |         5.00 |
+|  vid/mmcm_adv_inst_display_clocks/inst/clk_out2 |                                                   | vid/inst_dvid/shift_red[9]_i_1_n_0                             |                3 |              6 |         2.00 |
 |  clk_IBUF                                       | row_stepper/process_q[7]_i_1_n_0                  |                                                                |                3 |              6 |         2.00 |
 |  clk_IBUF                                       | column_counter/process_q[8]_i_1__0_n_0            | column_counter/reset_n                                         |                3 |              6 |         2.00 |
-|  vid/mmcm_adv_inst_display_clocks/inst/clk_out2 |                                                   | vid/inst_dvid/shift_red[9]_i_1_n_0                             |                3 |              6 |         2.00 |
 |  vid/mmcm_adv_inst_display_clocks/inst/clk_out1 | vid/Inst_vga/sig_gen/horizontal_counter/processQ0 | vid/Inst_vga/sig_gen/horizontal_counter/processQ[8]_i_1__0_n_0 |                6 |              9 |         1.50 |
-|  vid/mmcm_adv_inst_display_clocks/inst/clk_out1 | vid/Inst_vga/sig_gen/vertical_counter/processQ0   | vid/Inst_vga/sig_gen/horizontal_counter/SR[0]                  |                3 |             10 |         3.33 |
-|  vid/mmcm_adv_inst_display_clocks/inst/clk_out1 |                                                   | vid/Inst_vga/sig_gen/vga_reg[blank]_0                          |                5 |             13 |         2.60 |
-|  vid/mmcm_adv_inst_display_clocks/inst/clk_out2 |                                                   |                                                                |                7 |             29 |         4.14 |
+|  vid/mmcm_adv_inst_display_clocks/inst/clk_out1 | vid/Inst_vga/sig_gen/vertical_counter/processQ0   | vid/Inst_vga/sig_gen/horizontal_counter/SR[0]                  |                4 |             10 |         2.50 |
+|  vid/mmcm_adv_inst_display_clocks/inst/clk_out1 |                                                   | vid/Inst_vga/sig_gen/vga_reg[blank]_0                          |                7 |             13 |         1.86 |
+|  vid/mmcm_adv_inst_display_clocks/inst/clk_out2 |                                                   |                                                                |                5 |             29 |         5.80 |
 |  vid/mmcm_adv_inst_display_clocks/inst/clk_out1 |                                                   |                                                                |                9 |             30 |         3.33 |
 +-------------------------------------------------+---------------------------------------------------+----------------------------------------------------------------+------------------+----------------+--------------+
 
