@@ -49,40 +49,24 @@ vertical_counter : counter
            Q => current_pos.row
     );
 -- Assign VGA outputs in a gated manner
-process (clk)
+
+h_sync_is_low <= (current_pos.col >= 655 and current_pos.col < 751);
+v_sync_is_low <= (current_pos.row >= 489 and current_pos.row < 491);
+h_blank_is_low <= (current_pos.col >= 0 and current_pos.col < 639) or (current_pos.col = 799);
+v_blank_is_low <= (current_pos.row >= 0 and current_pos.row < 479) or (current_pos.row = 524);
+-- Assign VGA outputs in a gated manner
+process(clk)
+ 
 begin
-   if rising_edge(clk) then
-        if reset_n = '0' then
-            vga.hsync <= '1';
-            vga.vsync <= '1';
-            vga.blank <= '0';
-            
-        else
-            vga.hsync <= vga.hsync;
-            vga.vsync <= vga.vsync;
-            vga.blank <= vga.blank;
-            if current_pos.col = 639 then
-                vga.blank <= '1';
-                vga.hsync <= '1';
-            elsif current_pos.col = 655 then
-                vga.hsync <= '0';
-            elsif current_pos.col = 751 then
-                vga.hsync <= '1';
-            elsif current_pos.col = 799 then
-                vga.blank <= '0';
-            end if;
-            
-            if current_pos.row = 479 then
-                vga.vsync <= '1';
-                vga.blank <= '1';
-            elsif current_pos.row = 489 then
-                vga.vsync <= '0';
-            elsif current_pos.row = 491 then
-                vga.vsync <= '1';
-            elsif current_pos.row = 524 then
-                vga.blank <= '0';
-            end if;
-        end if;
+    if(rising_edge(clk)) then
+        --column logic        
+        vga.hsync <= '0' when h_sync_is_low else '1';
+ 
+        --row logic
+        vga.vsync <= '0' when v_sync_is_low else '1';
+        --blank logic
+        vga.blank <= '0' when (h_blank_is_low and v_blank_is_low) else '1';
+
     end if;
 end process;
 

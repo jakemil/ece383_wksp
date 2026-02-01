@@ -21,10 +21,10 @@ end lab1;
 architecture structure of lab1 is
 
     constant CENTER : integer := 0;
-    constant DOWN : integer := 1;
+    constant DOWN : integer := 4;
     constant LEFT : integer := 2;
     constant RIGHT : integer := 3;
-    constant UP : integer := 4;
+    constant UP : integer := 1;
 
     signal trigger: trigger_t;
 	signal pixel: pixel_t;
@@ -82,6 +82,6 @@ trigger.v <= unsigned(volt_trigger_value);
 ch1.active <= '1' when pixel.coordinate.row = pixel.coordinate.col else '0';
 ch2.active <= '1' when (440-pixel.coordinate.row) = pixel.coordinate.col else '0';
 -- Connect board hardware to signals
-ch1.en <= sw(0);
-ch2.en <= sw(1);
+ch1.en <= '1' when sw(0) = '1' else '0';
+ch2.en <= '1' when sw(1) = '1' else '0';
 end structure;

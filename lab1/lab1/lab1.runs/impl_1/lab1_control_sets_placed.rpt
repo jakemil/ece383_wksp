@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Fri Jan 30 15:54:42 2026
+| Date         : Sat Jan 31 22:35:48 2026
 | Host         : JakesXPS13 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file lab1_control_sets_placed.rpt
 | Design       : lab1
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    10 |
-|    Minimum number of control sets                        |    10 |
+| Total control sets                                       |    11 |
+|    Minimum number of control sets                        |    11 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |    37 |
+| Unused register locations in slices containing registers |    49 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,15 +39,15 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    10 |
+| Total control sets |    11 |
 | >= 0 to < 4        |     1 |
-| >= 4 to < 6        |     3 |
+| >= 4 to < 6        |     2 |
 | >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     1 |
-| >= 10 to < 12      |     1 |
+| >= 10 to < 12      |     3 |
 | >= 12 to < 14      |     0 |
-| >= 14 to < 16      |     0 |
-| >= 16              |     3 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     2 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
 
@@ -58,31 +58,32 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              42 |           10 |
+| No           | No                    | No                     |              62 |           17 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              38 |           11 |
-| Yes          | No                    | No                     |               0 |            0 |
+| No           | Yes                   | No                     |              26 |           11 |
+| Yes          | No                    | No                     |              20 |           10 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              19 |            6 |
+| Yes          | Yes                   | No                     |              19 |            7 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+-------------------------------------------------+---------------------------------------------------+----------------------------------------------------------------+------------------+----------------+--------------+
-|                   Clock Signal                  |                   Enable Signal                   |                        Set/Reset Signal                        | Slice Load Count | Bel Load Count | Bels / Slice |
-+-------------------------------------------------+---------------------------------------------------+----------------------------------------------------------------+------------------+----------------+--------------+
-|  vid/mmcm_adv_inst_display_clocks/inst/clk_out1 |                                                   | vid/Inst_vga/sig_gen/horizontal_counter/processQ[8]_i_1__0_n_0 |                1 |              1 |         1.00 |
-|  vid/mmcm_adv_inst_display_clocks/inst/clk_out2 |                                                   | vid/inst_dvid/shift_blue[7]_i_1_n_0                            |                2 |              5 |         2.50 |
-|  vid/mmcm_adv_inst_display_clocks/inst/clk_out2 |                                                   | vid/inst_dvid/shift_green[7]_i_1_n_0                           |                1 |              5 |         5.00 |
-|  vid/mmcm_adv_inst_display_clocks/inst/clk_out2 |                                                   | vid/inst_dvid/shift_red[7]_i_1_n_0                             |                1 |              5 |         5.00 |
-|  vid/mmcm_adv_inst_display_clocks/inst/clk_out2 |                                                   | vid/inst_dvid/shift_red[9]_i_1_n_0                             |                3 |              6 |         2.00 |
-|  vid/mmcm_adv_inst_display_clocks/inst/clk_out1 | vid/Inst_vga/sig_gen/horizontal_counter/processQ0 | vid/Inst_vga/sig_gen/horizontal_counter/processQ[8]_i_1__0_n_0 |                3 |              9 |         3.00 |
-|  vid/mmcm_adv_inst_display_clocks/inst/clk_out1 | vid/Inst_vga/sig_gen/vertical_counter/processQ0   | vid/Inst_vga/sig_gen/vertical_counter/processQ[9]_i_1_n_0      |                3 |             10 |         3.33 |
-|  vid/mmcm_adv_inst_display_clocks/inst/clk_out1 |                                                   | vid/Inst_vga/sig_gen/vga_signal[blank]                         |                3 |             16 |         5.33 |
-|  vid/mmcm_adv_inst_display_clocks/inst/clk_out2 |                                                   |                                                                |                5 |             19 |         3.80 |
-|  vid/mmcm_adv_inst_display_clocks/inst/clk_out1 |                                                   |                                                                |                5 |             23 |         4.60 |
-+-------------------------------------------------+---------------------------------------------------+----------------------------------------------------------------+------------------+----------------+--------------+
++-------------------------------------------------+---------------------------------------------------+-------------------------------------------------------------+------------------+----------------+--------------+
+|                   Clock Signal                  |                   Enable Signal                   |                       Set/Reset Signal                      | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------------------------+---------------------------------------------------+-------------------------------------------------------------+------------------+----------------+--------------+
+|  vid/mmcm_adv_inst_display_clocks/inst/clk_out1 |                                                   | vid/Inst_vga/sig_gen/horizontal_counter/processQ[8]_i_1_n_0 |                1 |              1 |         1.00 |
+|  clk_IBUF                                       |                                                   |                                                             |                3 |              4 |         1.33 |
+|  vid/mmcm_adv_inst_display_clocks/inst/clk_out2 |                                                   | vid/inst_dvid/shift_red[7]_i_1_n_0                          |                1 |              5 |         5.00 |
+|  vid/mmcm_adv_inst_display_clocks/inst/clk_out2 |                                                   | vid/inst_dvid/shift_red[9]_i_1_n_0                          |                3 |              6 |         2.00 |
+|  vid/mmcm_adv_inst_display_clocks/inst/clk_out1 | vid/Inst_vga/sig_gen/horizontal_counter/processQ0 | vid/Inst_vga/sig_gen/horizontal_counter/processQ[8]_i_1_n_0 |                4 |              9 |         2.25 |
+|  clk_IBUF                                       | row_stepper/process_q[10]_i_1_n_0                 |                                                             |                5 |             10 |         2.00 |
+|  clk_IBUF                                       | column_counter/process_q[10]_i_1__0_n_0           |                                                             |                5 |             10 |         2.00 |
+|  vid/mmcm_adv_inst_display_clocks/inst/clk_out1 | vid/Inst_vga/sig_gen/vertical_counter/processQ0   | vid/Inst_vga/sig_gen/horizontal_counter/SR[0]               |                3 |             10 |         3.33 |
+|  vid/mmcm_adv_inst_display_clocks/inst/clk_out1 |                                                   | vid/Inst_vga/sig_gen/vga_reg[blank]_0                       |                6 |             14 |         2.33 |
+|  vid/mmcm_adv_inst_display_clocks/inst/clk_out1 |                                                   |                                                             |                9 |             29 |         3.22 |
+|  vid/mmcm_adv_inst_display_clocks/inst/clk_out2 |                                                   |                                                             |                5 |             29 |         5.80 |
++-------------------------------------------------+---------------------------------------------------+-------------------------------------------------------------+------------------+----------------+--------------+
 
 
