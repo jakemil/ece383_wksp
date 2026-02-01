@@ -66,17 +66,17 @@ trig_v_i <= to_integer(unsigned(trigger.v));
 
 is_trigger_time <= true when (
                    (row_i >= grid_start_row) and
-                   (row_i <  grid_start_row + triangle_height) and
+                   (row_i <=  grid_start_row + triangle_height) and
                    (abs(col_i - trig_t_i) <= (triangle_half_width - (row_i - grid_start_row)))
                    ) else false;
 is_trigger_volt <= true when (
                    (col_i >= grid_start_col) and
-                   (col_i <  grid_start_col + triangle_height) and
+                   (col_i <=  grid_start_col + triangle_height) and
                    (abs(row_i - trig_v_i) <= (triangle_half_width - (col_i - grid_start_col)))
                    ) else false;
-is_ch1_line <= true when (position.row = (440-position.col))
+is_ch1_line <= true when (position.row = (440-position.col) and ch1.en = '1')
                else false;
-is_ch2_line <= true when (position.row = position.col)
+is_ch2_line <= true when (position.row = position.col and ch2.en = '1')
                else false;
 is_horizontal_hash <= true when ((position.col-grid_start_col) mod hash_horizontal_spacing = "0") and (abs(signed(position.row) - center_row) <= hash_half_length)
                       else false;
