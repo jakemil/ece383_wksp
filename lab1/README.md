@@ -68,7 +68,7 @@ clk, reset_n, btn, en
 **Outputs**
 trigger.v
 **Behavior**
-On the rising edge of the clock cycle, the instantiated num00000000pper will update the position of the voltage trigger by a certain delta between a max and min value indicated in the generic of the component. It accepts the UP/DOWN button inputs to update the trigger coordinate.
+On the rising edge of the clock cycle, the instantiated numeric stepper will update the position of the voltage trigger by a certain delta between a max and min value indicated in the generic of the component. It accepts the UP/DOWN button inputs to update the trigger coordinate.
 
 ### 2.3.2 Module: VGA
 
