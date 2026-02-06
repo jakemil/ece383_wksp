@@ -43,8 +43,8 @@ architecture behavior of button_debounce is
     END COMPONENT;
 	
 	-- these values are for 100KHz
-    signal D : unsigned(11 downto 0) := (others => '0');
-    signal Q : unsigned(11 downto 0);
+    signal D : unsigned(10 downto 0) := (others => '0');
+    signal Q : unsigned(10 downto 0);
     signal less : std_logic;
     
         
@@ -53,7 +53,7 @@ begin
 	--   DATAPATH
 	----------------------------------------------------------------------
 	delay_counter: lec10 
-    Generic map(12)
+    Generic map(11)
 	PORT MAP (
           clk => clk,
           reset => reset,
