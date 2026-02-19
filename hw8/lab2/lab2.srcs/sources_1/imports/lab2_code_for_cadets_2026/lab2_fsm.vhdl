@@ -28,8 +28,8 @@ end lab2_fsm;
 
 architecture Behavioral of lab2_fsm is
 
---	type state_type is NEED_SOMETHING_HERE;
---	signal state: state_type;
+	type state_type is (Count, WaitReady, Write, NotWrite);
+	signal state: state_type;
 
 begin
 
@@ -37,23 +37,35 @@ begin
 	--		SW		meaning
 	--		
 	-------------------------------------------------------------------------------
-	state_proces: process(clk)  
+	state_proces: process(clk)
 	begin
 		if (rising_edge(clk)) then
---			if (reset_n = '0') then 
---				state <= NEED_SOMETHING_HERE;
---			else 
---				case state is
---					when NEED_SOMETHING_HERE
---				end case;
---			end if;
+			if (reset_n = '0') then
+				state <= Count; --replace with StartCount!!
+			else 
+				case state is --will go back and add the StartCount state when trigger is in use
+					when Count =>
+					   state <= WaitReady;
+					when WaitReady =>
+					   if (sw(0) = '1') then state <= Write; end if;
+					when Write =>
+					   state <= NotWrite;
+					when NotWrite =>
+					   if (sw(0) = '0') then state <= Count; end if;
+				end case;
+			end if;
 		end if;
 	end process;
 
 	-------------------------------------------------------------------------------
 	--  CW output table
 	--		CW		meaning
-	--		
+	cw <= --"001" when state = StartCount else
+	      "010" when state = Count else
+	      "000" when state = WaitReady else
+	      "100" when state = Write else
+	      "000" when state = NotWrite else
+	      "000";		
 	-------------------------------------------------------------------------------
 	
 	-- NEED_SOMETHING_HERE
