@@ -74,7 +74,9 @@ architecture lab2_datapath_arch of lab2_datapath is
     signal reset: std_logic;   
     signal write_address: unsigned(9 downto 0);
     signal time_trigger_value, volt_trigger_value : signed(10 downto 0);
-    signal cw_reset: std_logic;   
+    signal cw_reset: std_logic;
+    
+    signal write_enable: std_logic;   
     
     
 begin
@@ -165,7 +167,7 @@ begin
       )
       Port map( 
         clk => clk,
-        reset_n => reset_n,
+        reset_n => cw_reset,
         ctrl => cw_counter_control, --need to replace this with the control word from FSM
         roll => sw_last_address, --need to replace with status word bit to detect max value reached
         Q => writeCntr
@@ -223,7 +225,7 @@ begin
           sim_live => is_live);
 
     -- BRAM stuff goes here
-
+    write_enable <= cw_write_en when exSel = '0' else exWen;
 	reset <= not reset_n;
 	-- left is channel 1
 	leftChannelMemory : BRAM_SDP_MACRO
@@ -410,7 +412,8 @@ begin
 
     sw(0) <= sw_ready;
     sw(1) <= sw_last_address;
-    sw(2) <= sw_trigger;
+    --sw(2) <= sw_trigger;
+    sw(2) <= '1';
     
     cw_reset <= cw(0);
     cw_counter_control <= cw(1);
