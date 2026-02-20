@@ -80,6 +80,7 @@ read_vhdl -library xil_defaultlib {
   C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/imports/new/counter.vhdl
   C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/ece383_pkg.vhd
   C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl
+  C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/trigger_detector.vhd
 }
 read_vhdl -vhdl2008 -library xil_defaultlib {
   C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd
