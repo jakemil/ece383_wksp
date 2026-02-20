@@ -34,7 +34,7 @@ use work.ece383_pkg.all;
     Lbus_out, Rbus_out: out std_logic_vector(15 downto 0);
     exLbus, exRbus: in std_logic_vector(15 downto 0);
     flagQ: out std_logic;
-    flagClear: in std_logic); 
+    flagClear: in std_logic);
 end lab2_datapath;
 
 architecture lab2_datapath_arch of lab2_datapath is
@@ -180,15 +180,15 @@ begin
 	-- the trigger.  Set the status word to alert the FSM that it should start 
 	-- recording the samples.
 	-------------------------------------------------------------------------------		
---	trig_detect : trigger_detector
---    port map (
---        clk  => clk,
---        reset_n => reset_n,
---        threshold => ,
---        ready => sw_ready,
---        monitored_signal => ,
---        crossed_trigger => sw_trigger
---    );
+	trig_detect : trigger_detector
+    port map (
+        clk  => clk,
+        reset_n => reset_n,
+        threshold => trigger.v,
+        ready => sw_ready,
+        monitored_signal => apply_offset(ch1.current_sample(15 downto 7)),
+        crossed_trigger => sw_trigger
+    );
 	
 	-------------------------------------------------------------------------------
 	-- Instantiate the video driver from Lab1 - should integrate smoothly
@@ -412,8 +412,7 @@ begin
 
     sw(0) <= sw_ready;
     sw(1) <= sw_last_address;
-    --sw(2) <= sw_trigger;
-    sw(2) <= '1';
+    sw(2) <= sw_trigger;
     
     cw_reset <= cw(0);
     cw_counter_control <= cw(1);
