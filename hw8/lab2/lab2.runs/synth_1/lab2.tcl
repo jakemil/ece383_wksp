@@ -56,6 +56,8 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a200tsbg484-1
 
@@ -77,9 +79,11 @@ OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/audio_init.v
 read_vhdl -library xil_defaultlib {
   C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/TWICtl.vhd
+  C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/imports/Homework_7/button_debounce.vhdl
   C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/imports/new/counter.vhdl
   C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/ece383_pkg.vhd
   C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/lab2_datapath.vhdl
+  C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/imports/Homework_7/lec10.vhdl
   C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/trigger_detector.vhd
 }
 read_vhdl -vhdl2008 -library xil_defaultlib {

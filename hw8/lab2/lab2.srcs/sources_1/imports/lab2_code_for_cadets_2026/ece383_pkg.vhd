@@ -85,6 +85,14 @@ package ece383_pkg is
   constant CENTER : integer := 4;
   
   --= COMPONENTS =--
+  
+  component button_debounce is
+  Port(	clk: in  STD_LOGIC;
+		reset : in  STD_LOGIC;
+		button: in STD_LOGIC;
+		action: out STD_LOGIC);
+   end component;
+  
   -- This is the general purpose counter from HW4.  ctrl=1 for count up mode, 0 for hold.
   component counter is
     generic (

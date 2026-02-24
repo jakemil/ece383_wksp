@@ -2,7 +2,8 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 library UNIMACRO;
-use UNIMACRO.vcomponents.all;	
+use UNIMACRO.vcomponents.all;
+use work.ece383_pkg.all;
 
  entity lab2 is
      Port ( clk : in  STD_LOGIC;
@@ -24,7 +25,17 @@ architecture behavior of lab2 is
 
 	signal sw: std_logic_vector(2 downto 0);
 	signal cw: std_logic_vector (2 downto 0);
+	signal reset: std_logic;
+	signal btn_signal: STD_LOGIC_VECTOR(4 downto 0); 
+	
 
+ component button_debounce is
+  Port(	clk: in  STD_LOGIC;
+		reset : in  STD_LOGIC;
+		button: in STD_LOGIC;
+		action: out STD_LOGIC);
+ end component;
+  
  component lab2_datapath
     Port ( clk : in  STD_LOGIC;
 	reset_n : in  STD_LOGIC;
@@ -72,7 +83,7 @@ begin
 		tmdsb => tmdsb,
 		sw => sw,
 		cw => cw,
-		btn => btn, 
+		btn => btn_signal, 
 		switch => switch,
 		exWrAddr => "0000000000",
 		exWen => '0',
@@ -90,5 +101,42 @@ begin
 		reset_n => reset_n,
 		sw => sw,
 		cw => cw);
+		
+    reset <= not reset_n;
+    
+	up_debouncer: button_debounce port map( 
+	    clk => clk,
+	    reset => reset_n,
+	    button => btn(UP),
+	    action => btn_signal(UP)
+	);
+	
+	down_debouncer: button_debounce port map( 
+	    clk => clk,
+	    reset => reset_n,
+	    button => btn(DOWN),
+	    action => btn_signal(DOWN)
+	);
+	
+	left_debouncer: button_debounce port map( 
+	    clk => clk,
+	    reset => reset_n,
+	    button => btn(LEFT),
+	    action => btn_signal(LEFT)
+	);
+	
+	right_debouncer: button_debounce port map( 
+	    clk => clk,
+	    reset => reset_n,
+	    button => btn(RIGHT),
+	    action => btn_signal(RIGHT)
+	);
+	
+	center_debouncer: button_debounce port map( 
+	    clk => clk,
+	    reset => reset_n,
+	    button => btn(CENTER),
+	    action => btn_signal(CENTER)
+	);
 
 end behavior;

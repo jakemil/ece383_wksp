@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Tue Feb 24 08:07:24 2026
+| Date         : Tue Feb 24 09:42:18 2026
 | Host         : JakesXPS13 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file lab2_methodology_drc_routed.rpt -pb lab2_methodology_drc_routed.pb -rpx lab2_methodology_drc_routed.rpx
 | Design       : lab2
@@ -23,13 +23,15 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 202
+             Checks found: 307
 +-----------+------------------+---------------------------------------------------+--------+
 | Rule      | Severity         | Description                                       | Checks |
 +-----------+------------------+---------------------------------------------------+--------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell                       | 199    |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                       | 295    |
 | TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin         | 2      |
+| TIMING-20 | Warning          | Non-clocked latch                                 | 8      |
 | XDCC-2    | Warning          | Scoped Non-Timing constraint/property overwritten | 1      |
+| LATCH-1   | Advisory         | Existing latches in the design                    | 1      |
 +-----------+------------------+---------------------------------------------------+--------+
 
 2. REPORT DETAILS
@@ -1029,6 +1031,486 @@ Non-clocked sequential cell
 The clock pin datapath/trig_detect/previous_reg[8]/C is not reached by a timing clock
 Related violations: <none>
 
+TIMING-17#200 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/FSM_sequential_state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#201 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/FSM_sequential_state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#202 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/FSM_sequential_state_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#203 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#204 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#205 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#206 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#207 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#208 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#209 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#210 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#211 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#212 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#213 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#214 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#215 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#216 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#217 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#218 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#219 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#220 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#221 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#222 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#223 Critical Warning
+Non-clocked sequential cell  
+The clock pin down_debouncer/delay_counter/processQ_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#224 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/FSM_sequential_state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#225 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/FSM_sequential_state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#226 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/FSM_sequential_state_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#227 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#228 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#229 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#230 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#231 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#232 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#233 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#234 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#235 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#236 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#237 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#238 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#239 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#240 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#241 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#242 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#243 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#244 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#245 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#246 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#247 Critical Warning
+Non-clocked sequential cell  
+The clock pin left_debouncer/delay_counter/processQ_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#248 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/FSM_sequential_state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#249 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/FSM_sequential_state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#250 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/FSM_sequential_state_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#251 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#252 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#253 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#254 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#255 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#256 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#257 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#258 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#259 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#260 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#261 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#262 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#263 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#264 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#265 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#266 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#267 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#268 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#269 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#270 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#271 Critical Warning
+Non-clocked sequential cell  
+The clock pin right_debouncer/delay_counter/processQ_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#272 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/FSM_sequential_state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#273 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/FSM_sequential_state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#274 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/FSM_sequential_state_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#275 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#276 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[10]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#277 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[11]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#278 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[12]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#279 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[13]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#280 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[14]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#281 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[15]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#282 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[16]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#283 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[17]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#284 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[18]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#285 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[19]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#286 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#287 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[20]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#288 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#289 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#290 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#291 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#292 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#293 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#294 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#295 Critical Warning
+Non-clocked sequential cell  
+The clock pin up_debouncer/delay_counter/processQ_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
 TIMING-27#1 Critical Warning
 Invalid primary clock on hierarchical pin  
 A primary clock datapath/Audio_Codec/audiocodec_master_clock/inst/clk_in1 is created on an inappropriate internal pin datapath/Audio_Codec/audiocodec_master_clock/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
@@ -1039,11 +1521,56 @@ Invalid primary clock on hierarchical pin
 A primary clock datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1 is created on an inappropriate internal pin datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
 Related violations: <none>
 
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch down_debouncer/cw_reg[0] cannot be properly analyzed as its control pin down_debouncer/cw_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch down_debouncer/cw_reg[1] cannot be properly analyzed as its control pin down_debouncer/cw_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch left_debouncer/cw_reg[0] cannot be properly analyzed as its control pin left_debouncer/cw_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch left_debouncer/cw_reg[1] cannot be properly analyzed as its control pin left_debouncer/cw_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch right_debouncer/cw_reg[0] cannot be properly analyzed as its control pin right_debouncer/cw_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch right_debouncer/cw_reg[1] cannot be properly analyzed as its control pin right_debouncer/cw_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch up_debouncer/cw_reg[0] cannot be properly analyzed as its control pin up_debouncer/cw_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch up_debouncer/cw_reg[1] cannot be properly analyzed as its control pin up_debouncer/cw_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
 XDCC-2#1 Warning
 Scoped Non-Timing constraint/property overwritten  
 A new XDC property IOSTANDARD on reset_n overrides a previous scoped property. It is not recommended to override a scoped (typically an IP) property and could result in unexpected behaviours.
 New Source: C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/constrs_1/imports/lab2_code_for_cadets_2026/Lab2.xdc (Line: 38)
 Previous Source: c:/Users/jakem/ece383_wksp/hw8/lab2/lab2.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc (Line: 4)
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 8 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
 Related violations: <none>
 
 
