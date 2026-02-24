@@ -173,7 +173,7 @@ begin
         Q => writeCntr
       );
     
-    write_address <= writeCntr when exSel = '0' else unsigned(exWrAddr);
+    write_address <= (writeCntr + 20) when exSel = '0' else unsigned(exWrAddr);
 	-------------------------------------------------------------------------------
 	-- Triggering Logic: A positive crossing of the trigger occurs when the previous value is 
 	--	less than the trigger and the current value is greater than or equal to
@@ -201,7 +201,7 @@ begin
 		trigger => trigger,
 		position => position,
 		ch1 => ch1,
-		ch2 => ch2); 
+		ch2 => ch2);
 
     ch1.en <= switch(CH1_SWITCH);
     ch2.en <= switch(CH2_SWITCH);
@@ -417,6 +417,8 @@ begin
     cw_reset <= cw(0);
     cw_counter_control <= cw(1);
     cw_write_en <= cw(2);
+    
+    ch1.to_ac <= ch1.incoming_sample & "00";
 
 end lab2_datapath_arch;
 

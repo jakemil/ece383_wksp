@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Fri Feb 20 07:50:38 2026
+| Date             : Tue Feb 24 08:07:26 2026
 | Host             : JakesXPS13 running 64-bit major release  (build 9200)
 | Command          : report_power -file lab2_power_routed.rpt -pb lab2_power_summary_routed.pb -rpx lab2_power_routed.rpx
 | Design           : lab2
@@ -53,15 +53,15 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.006 |       10 |       --- |             --- |
-| Slice Logic    |     0.001 |     1338 |       --- |             --- |
-|   LUT as Logic |     0.001 |      625 |    133800 |            0.47 |
+| Slice Logic    |     0.002 |     1376 |       --- |             --- |
+|   LUT as Logic |     0.001 |      648 |    133800 |            0.48 |
 |   CARRY4       |    <0.001 |       54 |     33450 |            0.16 |
-|   Register     |    <0.001 |      392 |    267600 |            0.15 |
+|   Register     |    <0.001 |      409 |    267600 |            0.15 |
 |   Others       |     0.000 |       43 |       --- |             --- |
-| Signals        |     0.001 |      940 |       --- |             --- |
+| Signals        |     0.001 |      963 |       --- |             --- |
 | Block RAM      |     0.002 |        2 |       365 |            0.55 |
 | MMCM           |     0.228 |        2 |        10 |           20.00 |
-| I/O            |     0.138 |       24 |       285 |            8.42 |
+| I/O            |     0.138 |       25 |       285 |            8.77 |
 | Static Power   |     0.140 |          |           |                 |
 | Total          |     0.518 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
@@ -150,9 +150,10 @@ Table of Contents
 +------------------------------------+-----------+
 | lab2                               |     0.377 |
 |   datapath                         |     0.372 |
-|     Audio_Codec                    |     0.125 |
+|     Audio_Codec                    |     0.126 |
 |       audio_inout                  |     0.001 |
 |       audiocodec_master_clock      |     0.123 |
+|       initialize_audio             |     0.001 |
 |     leftChannelMemory              |     0.001 |
 |     rightChannelMemory             |     0.001 |
 |     video_inst                     |     0.242 |
