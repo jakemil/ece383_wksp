@@ -86,6 +86,14 @@ package ece383_pkg is
   
   --= COMPONENTS =--
   
+  component flag_register is
+    Port ( clk : in STD_LOGIC;
+           reset_n : in STD_LOGIC;
+           set : in STD_LOGIC;
+           clear : in STD_LOGIC;
+           Q : out STD_LOGIC);
+  end component;
+  
   component button_debounce is
   Port(	clk: in  STD_LOGIC;
 		reset : in  STD_LOGIC;
@@ -123,6 +131,7 @@ package ece383_pkg is
     q       : out signed(num_bits-1 downto 0)   -- signed output
   );
   end component;
+ 
   
   -- Generates the signals needed for VGA video  
   component vga_signal_generator is

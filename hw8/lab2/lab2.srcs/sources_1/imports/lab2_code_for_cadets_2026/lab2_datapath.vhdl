@@ -112,6 +112,14 @@ begin
     ch2.to_bram <= ch2.current_sample when exSel = '0' else exRBus;
     -- Need logic for the FLAG register
 	-- Add code here
+	flag: entity work.flag_register
+	port map(
+	   clk => clk,
+       reset_n => reset_n,
+       set => sw_ready,
+       clear => flagClear,
+       Q => flagQ
+	);
 	
     ------------------------------------------------------------------------------
 	-- If a button has been pressed then increment of decrement the trigger time and Volt
@@ -315,7 +323,7 @@ begin
             WE => "11",                    -- Input write enable, width defined by write port depth
             WRADDR => std_logic_vector(write_address),                -- Input write address, width defined by write port depth
             WRCLK => clk,                   -- 1-bit input write clock
-            WREN => cw_write_en);              -- 1-bit input write port enable (need to update this to signal coming out of MUX eventually)
+            WREN => write_enable);              -- 1-bit input write port enable (need to update this to signal coming out of MUX eventually)
             -- End of BRAM_SDP_MACRO_inst instantiation
 
 
@@ -407,7 +415,7 @@ begin
             WE => "11",                        -- Input write enable, width defined by write port depth
             WRADDR => std_logic_vector(write_address),                -- Input write address, width defined by write port depth
             WRCLK => clk,                    -- 1-bit input write clock
-            WREN => cw_write_en);                -- 1-bit input write port enable
+            WREN => write_enable);                -- 1-bit input write port enable
             -- End of BRAM_SDP_MACRO_inst instantiation
 
     sw(0) <= sw_ready;

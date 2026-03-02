@@ -56,8 +56,6 @@ if {$::dispatch::connected} {
 }
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
-set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a200tsbg484-1
 
@@ -87,6 +85,7 @@ read_vhdl -library xil_defaultlib {
   C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/trigger_detector.vhd
 }
 read_vhdl -vhdl2008 -library xil_defaultlib {
+  C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/new/flag_register.vhd
   C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd
   C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/imports/lab2_code_for_cadets_2026/Audio_Codec_Wrapper.vhd
   C:/Users/jakem/ece383_wksp/hw8/lab2/lab2.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd
