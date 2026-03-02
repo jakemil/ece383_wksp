@@ -47,7 +47,7 @@ The system uses a modular architecture divided into a Datapath and Control Unit.
 
 ## 2.1 System Block Diagram 
 As can be seen in the attached block diagram, the system is broken down into a datapath and a control unit. These two systems work in tandem to write audio data from the codec into the BRAM and drive a counter to track the 1024 samples output from the audiocodec consistently. Within the datapath are the primary components including the audiocodec, conversion logic, BRAM, trigger detector, counter, numeric steppers (trigger values), vga video component, and flag register.
-![System Block Diagram](schematic.png)
+![System Block Diagram](diagram.png)
 
 ## 2.2 Module Descriptions  
 
