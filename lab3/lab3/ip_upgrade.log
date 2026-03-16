@@ -1,0 +1,112 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Mar 16 17:12:42 2026
+| Host         : JakesXPS13 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Lab2_0_0 (xilinx.com:user:My_Lab2:1.0) from (Rev. 4) to (Rev. 5)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Mar 16 16:38:40 2026
+| Host         : JakesXPS13 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Lab2_0_0 (xilinx.com:user:My_Lab2:1.0) from (Rev. 3) to (Rev. 4)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Mar 16 16:31:26 2026
+| Host         : JakesXPS13 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab2_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_My_Lab2_0_0 (xilinx.com:user:My_Lab2:1.0) from (Rev. 2) to (Rev. 3)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Mon Mar 16 16:14:10 2026
+| Host         : JakesXPS13 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_My_Lab2_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_My_Lab2_0_0 (xilinx.com:user:My_Lab2:1.0) from (Rev. 1) to (Rev. 2)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_My_Lab2_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'ac_adc_sdata'
+
+-Upgrade has added port 'ac_bclk'
+
+-Upgrade has added port 'ac_dac_sdata'
+
+-Upgrade has added port 'ac_lrclk'
+
+-Upgrade has added port 'ac_mclk'
+
+-Upgrade has added port 'btn'
+
+-Upgrade has added port 'flagQ'
+
+-Upgrade has added port 'scl'
+
+-Upgrade has added port 'sda'
+
+-Upgrade has added port 'switch'
+
+-Upgrade has added port 'tmds'
+
+-Upgrade has added port 'tmdsb'
+
+
