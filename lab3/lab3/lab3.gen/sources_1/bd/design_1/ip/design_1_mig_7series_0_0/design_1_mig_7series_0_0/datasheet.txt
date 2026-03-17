@@ -12,7 +12,7 @@ MIG Output Options:
    Selected Compatible Device(s)   : --
 
 FPGA Options:
-   System Clock Type               : Single-Ended
+   System Clock Type               : No Buffer
    Reference Clock Type            : No Buffer
    Debug Port                      : OFF
    Internal Vref                   : enabled
@@ -104,10 +104,6 @@ Bank Selections:
 		Byte Group T2:	Address/Ctrl-0
 		Byte Group T3:	Address/Ctrl-1
 
-
-System_Clock: 
-	SignalName: sys_clk_i
-		PadLocation: R4(MRCC_P)  Bank: 34
 
 System_Control: 
 	SignalName: sys_rst

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Mon Mar 16 17:35:08 2026
+| Date         : Tue Mar 17 14:29:45 2026
 | Host         : JakesXPS13 running 64-bit major release  (build 9200)
 | Command      : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -24,29 +24,27 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max checks: <unlimited>
-             Checks found: 22
-+-----------+------------------+-----------------------------------------------------+--------+
-| Rule      | Severity         | Description                                         | Checks |
-+-----------+------------------+-----------------------------------------------------+--------+
-| RTRES-1   | Critical Warning | Backbone resources                                  | 1      |
-| BUFC-1    | Warning          | Input Buffer Connections                            | 2      |
-| CFGBVS-1  | Warning          | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1      |
-| PDRC-132  | Warning          | SLICE_PairEqSame_A6A5_WARN                          | 4      |
-| PDRC-134  | Warning          | SLICE_PairEqSame_B6B5_WARN                          | 2      |
-| PDRC-136  | Warning          | SLICE_PairEqSame_C6C5_WARN                          | 4      |
-| PDRC-138  | Warning          | SLICE_PairEqSame_D6D5_WARN                          | 2      |
-| PDRC-153  | Warning          | Gated clock check                                   | 4      |
-| REQP-1709 | Warning          | Clock output buffering                              | 1      |
-| RTSTAT-10 | Warning          | No routable loads                                   | 1      |
-+-----------+------------------+-----------------------------------------------------+--------+
+             Checks found: 21
++-----------+----------+-----------------------------------------------------+--------+
+| Rule      | Severity | Description                                         | Checks |
++-----------+----------+-----------------------------------------------------+--------+
+| BUFC-1    | Warning  | Input Buffer Connections                            | 2      |
+| CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1      |
+| PDRC-132  | Warning  | SLICE_PairEqSame_A6A5_WARN                          | 3      |
+| PDRC-134  | Warning  | SLICE_PairEqSame_B6B5_WARN                          | 2      |
+| PDRC-136  | Warning  | SLICE_PairEqSame_C6C5_WARN                          | 1      |
+| PDRC-138  | Warning  | SLICE_PairEqSame_D6D5_WARN                          | 2      |
+| PDRC-140  | Warning  | SLICE_PairEqSame_A6A5_WARN                          | 1      |
+| PDRC-142  | Warning  | SLICE_PairEqSame_B6B5_WARN                          | 1      |
+| PDRC-144  | Warning  | SLICE_PairEqSame_C6C5_WARN                          | 1      |
+| PDRC-146  | Warning  | SLICE_PairEqSame_D6D5_WARN                          | 1      |
+| PDRC-153  | Warning  | Gated clock check                                   | 4      |
+| REQP-1709 | Warning  | Clock output buffering                              | 1      |
+| RTSTAT-10 | Warning  | No routable loads                                   | 1      |
++-----------+----------+-----------------------------------------------------+--------+
 
 2. REPORT DETAILS
 -----------------
-RTRES-1#1 Critical Warning
-Backbone resources  
-1 net(s) have CLOCK_DEDICATED_ROUTE set to BACKBONE but do not use backbone resources. The problem net(s) are design_1_i/clk_wiz_1/inst/clk_out2.
-Related violations: <none>
-
 BUFC-1#1 Warning
 Input Buffer Connections  
 Input buffer design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HR.gen_dqs_iobuf[0].gen_dqs_diff.u_iobuf_dqs/IBUFDS_0 (in design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/gen_dqs_iobuf_HR.gen_dqs_iobuf[0].gen_dqs_diff.u_iobuf_dqs macro) has no loads. It is recommended to have an input buffer drive an internal load.
@@ -72,62 +70,62 @@ Related violations: <none>
 
 PDRC-132#1 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X127Y135 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X113Y125 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#2 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X137Y173 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X114Y161 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-132#3 Warning
 SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X139Y137 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-132#4 Warning
-SLICE_PairEqSame_A6A5_WARN  
-Luts A6LUT and A5LUT in use in site SLICE_X141Y166 with different equations without A6 pin connected to Global Logic High.
+Luts A6LUT and A5LUT in use in site SLICE_X125Y161 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-134#1 Warning
 SLICE_PairEqSame_B6B5_WARN  
-Luts B6LUT and B5LUT in use in site SLICE_X127Y135 with different equations without A6 pin connected to Global Logic High.
+Luts B6LUT and B5LUT in use in site SLICE_X106Y146 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-134#2 Warning
 SLICE_PairEqSame_B6B5_WARN  
-Luts B6LUT and B5LUT in use in site SLICE_X156Y152 with different equations without A6 pin connected to Global Logic High.
+Luts B6LUT and B5LUT in use in site SLICE_X113Y125 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-136#1 Warning
 SLICE_PairEqSame_C6C5_WARN  
-Luts C6LUT and C5LUT in use in site SLICE_X118Y121 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-136#2 Warning
-SLICE_PairEqSame_C6C5_WARN  
-Luts C6LUT and C5LUT in use in site SLICE_X125Y193 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-136#3 Warning
-SLICE_PairEqSame_C6C5_WARN  
-Luts C6LUT and C5LUT in use in site SLICE_X137Y137 with different equations without A6 pin connected to Global Logic High.
-Related violations: <none>
-
-PDRC-136#4 Warning
-SLICE_PairEqSame_C6C5_WARN  
-Luts C6LUT and C5LUT in use in site SLICE_X156Y152 with different equations without A6 pin connected to Global Logic High.
+Luts C6LUT and C5LUT in use in site SLICE_X135Y204 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-138#1 Warning
 SLICE_PairEqSame_D6D5_WARN  
-Luts D6LUT and D5LUT in use in site SLICE_X135Y116 with different equations without A6 pin connected to Global Logic High.
+Luts D6LUT and D5LUT in use in site SLICE_X103Y128 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-138#2 Warning
 SLICE_PairEqSame_D6D5_WARN  
-Luts D6LUT and D5LUT in use in site SLICE_X156Y152 with different equations without A6 pin connected to Global Logic High.
+Luts D6LUT and D5LUT in use in site SLICE_X135Y204 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-140#1 Warning
+SLICE_PairEqSame_A6A5_WARN  
+Luts A6LUT and A5LUT in use in site SLICE_X100Y128 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-142#1 Warning
+SLICE_PairEqSame_B6B5_WARN  
+Luts B6LUT and B5LUT in use in site SLICE_X116Y150 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-144#1 Warning
+SLICE_PairEqSame_C6C5_WARN  
+Luts C6LUT and C5LUT in use in site SLICE_X116Y150 with different equations without A6 pin connected to Global Logic High.
+Related violations: <none>
+
+PDRC-146#1 Warning
+SLICE_PairEqSame_D6D5_WARN  
+Luts D6LUT and D5LUT in use in site SLICE_X116Y150 with different equations without A6 pin connected to Global Logic High.
 Related violations: <none>
 
 PDRC-153#1 Warning
@@ -157,20 +155,20 @@ Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-15 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/mi_handler_m_sc_areset_pipe,
-design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/mi_handler_m_sc_areset_pipe,
-design_1_i/axi_smc/inst/m00_nodes/m00_b_node/inst/mi_handler_m_sc_areset_pipe,
-design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/mi_handler_m_sc_areset_pipe,
-design_1_i/axi_smc/inst/m01_nodes/m01_w_node/inst/mi_handler_m_sc_areset_pipe,
-design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/mi_handler_m_sc_areset_pipe,
-design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/mi_handler_m_sc_areset_pipe,
-design_1_i/axi_smc/inst/m01_nodes/m01_r_node/inst/mi_handler_m_sc_areset_pipe,
-design_1_i/axi_smc/inst/m01_nodes/m01_b_node/inst/mi_handler_m_sc_areset_pipe,
-design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/mi_handler_m_sc_areset_pipe,
+15 net(s) have no routable loads. The problem bus(es) and/or net(s) are design_1_i/axi_smc/inst/s00_nodes/s00_r_node/inst/mi_handler_m_sc_areset_pipe,
+design_1_i/axi_smc/inst/m01_nodes/m01_ar_node/inst/mi_handler_m_sc_areset_pipe,
 design_1_i/axi_smc/inst/s00_nodes/s00_w_node/inst/mi_handler_m_sc_areset_pipe,
+design_1_i/axi_smc/inst/s00_nodes/s00_ar_node/inst/mi_handler_m_sc_areset_pipe,
+design_1_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/mi_handler_m_sc_areset_pipe,
+design_1_i/axi_smc/inst/m01_nodes/m01_w_node/inst/mi_handler_m_sc_areset_pipe,
+design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/mi_handler_m_sc_areset_pipe,
 design_1_i/axi_smc/inst/s00_nodes/s00_aw_node/inst/mi_handler_m_sc_areset_pipe,
-design_1_i/axi_smc/inst/m01_nodes/m01_ar_node/inst/mi_handler_m_sc_areset_pipe
-design_1_i/axi_smc/inst/m01_nodes/m01_aw_node/inst/mi_handler_m_sc_areset_pipe.
+design_1_i/axi_smc/inst/m01_nodes/m01_b_node/inst/mi_handler_m_sc_areset_pipe,
+design_1_i/axi_smc/inst/m01_nodes/m01_r_node/inst/mi_handler_m_sc_areset_pipe,
+design_1_i/axi_smc/inst/m00_nodes/m00_w_node/inst/mi_handler_m_sc_areset_pipe,
+design_1_i/axi_smc/inst/m00_nodes/m00_r_node/inst/mi_handler_m_sc_areset_pipe,
+design_1_i/axi_smc/inst/s00_nodes/s00_b_node/inst/mi_handler_m_sc_areset_pipe
+design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/mi_handler_m_sc_areset_pipe.
 Related violations: <none>
 
 

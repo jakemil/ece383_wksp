@@ -447,7 +447,7 @@ module design_1_mig_7series_0_0_mig #
                                      // It is associated to a set of IODELAYs with
                                      // an IDELAYCTRL that have same IODELAY CONTROLLER
                                      // clock frequency (300MHz/400MHz).
-   parameter SYSCLK_TYPE           = "SINGLE_ENDED",
+   parameter SYSCLK_TYPE           = "NO_BUFFER",
                                      // System clock type DIFFERENTIAL, SINGLE_ENDED,
                                      // NO_BUFFER
    parameter REFCLK_TYPE           = "NO_BUFFER",

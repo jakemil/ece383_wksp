@@ -2,7 +2,7 @@
 --Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
---Date        : Mon Mar 16 17:13:05 2026
+--Date        : Tue Mar 17 14:12:36 2026
 --Host        : JakesXPS13 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -65,7 +65,6 @@ architecture STRUCTURE of design_1_wrapper is
     DDR3_cke : out STD_LOGIC_VECTOR ( 0 to 0 );
     DDR3_dm : out STD_LOGIC_VECTOR ( 1 downto 0 );
     DDR3_odt : out STD_LOGIC_VECTOR ( 0 to 0 );
-    sys_clock : in STD_LOGIC;
     reset : in STD_LOGIC;
     tmdsb : out STD_LOGIC_VECTOR ( 3 downto 0 );
     tmds : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -77,7 +76,8 @@ architecture STRUCTURE of design_1_wrapper is
     ac_bclk : out STD_LOGIC;
     ac_dac_sdata : out STD_LOGIC;
     ac_mclk : out STD_LOGIC;
-    ac_adc_sdata : in STD_LOGIC
+    ac_adc_sdata : in STD_LOGIC;
+    sys_clock : in STD_LOGIC
   );
   end component design_1;
 begin

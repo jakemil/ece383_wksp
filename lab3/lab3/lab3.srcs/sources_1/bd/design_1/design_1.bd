@@ -27,7 +27,8 @@
       "mig_7series_0": "",
       "axi_smc_1": "",
       "rst_mig_7series_0_100M": "",
-      "My_Lab2_0": ""
+      "My_Lab2_0": "",
+      "util_ds_buf_0": ""
     },
     "interface_ports": {
       "usb_uart": {
@@ -180,30 +181,6 @@
       }
     },
     "ports": {
-      "sys_clock": {
-        "type": "clk",
-        "direction": "I",
-        "parameters": {
-          "CLK_DOMAIN": {
-            "value": "design_1_sys_clock",
-            "value_src": "default"
-          },
-          "FREQ_HZ": {
-            "value": "100000000"
-          },
-          "FREQ_TOLERANCE_HZ": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "PHASE": {
-            "value": "0.0"
-          }
-        }
-      },
       "reset": {
         "type": "rst",
         "direction": "I",
@@ -257,6 +234,30 @@
       },
       "ac_adc_sdata": {
         "direction": "I"
+      },
+      "sys_clock": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "design_1_sys_clock",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0"
+          }
+        }
       }
     },
     "components": {
@@ -705,8 +706,17 @@
         "xci_path": "ip\\design_1_mig_7series_0_0\\design_1_mig_7series_0_0.xci",
         "inst_hier_path": "mig_7series_0",
         "parameters": {
+          "BOARD_MIG_PARAM": {
+            "value": "Custom"
+          },
+          "MIG_DONT_TOUCH_PARAM": {
+            "value": "Custom"
+          },
           "RESET_BOARD_INTERFACE": {
             "value": "reset"
+          },
+          "XML_INPUT_FILE": {
+            "value": "mig_a.prj"
           }
         }
       },
@@ -803,6 +813,18 @@
         "xci_name": "design_1_My_Lab2_0_0",
         "xci_path": "ip\\design_1_My_Lab2_0_0\\design_1_My_Lab2_0_0.xci",
         "inst_hier_path": "My_Lab2_0"
+      },
+      "util_ds_buf_0": {
+        "vlnv": "xilinx.com:ip:util_ds_buf:2.2",
+        "ip_revision": "7",
+        "xci_name": "design_1_util_ds_buf_0_0",
+        "xci_path": "ip\\design_1_util_ds_buf_0_0\\design_1_util_ds_buf_0_0.xci",
+        "inst_hier_path": "util_ds_buf_0",
+        "parameters": {
+          "C_BUF_TYPE": {
+            "value": "BUFG"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -940,10 +962,22 @@
           "My_Lab2_0/btn"
         ]
       },
+      "clk_wiz_1_clk_out1": {
+        "ports": [
+          "clk_wiz_1/clk_out1",
+          "axi_uartlite_0/s_axi_aclk",
+          "axi_smc/aclk",
+          "microblaze_0/Clk",
+          "microblaze_0_local_memory/LMB_Clk",
+          "axi_smc_1/aclk",
+          "My_Lab2_0/s00_axi_aclk",
+          "rst_clk_wiz_1_100M/slowest_sync_clk"
+        ]
+      },
       "clk_wiz_1_clk_out2": {
         "ports": [
           "clk_wiz_1/clk_out2",
-          "mig_7series_0/sys_clk_i"
+          "mig_7series_0/clk_ref_i"
         ]
       },
       "clk_wiz_1_locked": {
@@ -956,19 +990,6 @@
         "ports": [
           "mdm_1/Debug_SYS_Rst",
           "rst_clk_wiz_1_100M/mb_debug_sys_rst"
-        ]
-      },
-      "microblaze_0_Clk": {
-        "ports": [
-          "clk_wiz_1/clk_out1",
-          "microblaze_0/Clk",
-          "microblaze_0_local_memory/LMB_Clk",
-          "rst_clk_wiz_1_100M/slowest_sync_clk",
-          "axi_smc/aclk",
-          "axi_uartlite_0/s_axi_aclk",
-          "mig_7series_0/clk_ref_i",
-          "axi_smc_1/aclk",
-          "My_Lab2_0/s00_axi_aclk"
         ]
       },
       "mig_7series_0_mmcm_locked": {
@@ -1034,6 +1055,13 @@
       "sys_clock_1": {
         "ports": [
           "sys_clock",
+          "util_ds_buf_0/BUFG_I"
+        ]
+      },
+      "util_ds_buf_0_BUFG_O": {
+        "ports": [
+          "util_ds_buf_0/BUFG_O",
+          "mig_7series_0/sys_clk_i",
           "clk_wiz_1/clk_in1"
         ]
       }

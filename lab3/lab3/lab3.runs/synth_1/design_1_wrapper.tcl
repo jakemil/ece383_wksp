@@ -57,7 +57,7 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 2
-set_param bd.open.in_stealth_mode 1
+set_param bd.open.in_stealth_mode 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a200tsbg484-1
 
@@ -78,7 +78,7 @@ set_property ip_output_repo c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.cache/ip [
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+read_vhdl -library xil_defaultlib C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
 add_files C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.srcs/sources_1/bd/design_1/design_1.bd
 set_property used_in_implementation false [get_files -all c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0_ooc_debug.xdc]
@@ -163,10 +163,12 @@ set_property used_in_implementation false [get_files -all c:/Users/jakem/ece383_
 set_property used_in_implementation false [get_files -all c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/design_1_rst_mig_7series_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/design_1_rst_mig_7series_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_1_1/clk_wiz_1.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_1_1/clk_wiz_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_0_1/clk_wiz_0.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_0_1/clk_wiz_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_1_1/clk_wiz_1.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_1_1/clk_wiz_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/design_1_ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf]
 

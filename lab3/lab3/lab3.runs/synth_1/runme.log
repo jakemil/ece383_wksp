@@ -8,7 +8,7 @@
   **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
   **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
   **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-  **** Start of session at: Mon Mar 16 17:14:35 2026
+  **** Start of session at: Tue Mar 17 14:13:38 2026
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
     ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 
@@ -16,7 +16,7 @@ source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/jakem/ece383_wksp/lab3/ip_repo/My_Lab2_1_0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
-add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 369.621 ; gain = 77.094
+add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 369.977 ; gain = 76.688
 Command: read_checkpoint -auto_incremental -incremental C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -29,9 +29,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 24824
+INFO: [Synth 8-7075] Helper process launched with PID 24760
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1100.465 ; gain = 469.227
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1101.414 ; gain = 468.035
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_7/synth/bd_afc3_aroutsw_0.sv:94]
 WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_8/synth/bd_afc3_routsw_0.sv:83]
@@ -58,10 +58,10 @@ WARNING: [Synth 8-9112] actual for formal port 'rdaddr' is neither a static name
 WARNING: [Synth 8-9112] actual for formal port 'wraddr' is neither a static name nor a globally static expression [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ipshared/a6f3/src/lab2_datapath.vhdl:326]
 WARNING: [Synth 8-9112] actual for formal port 'rdaddr' is neither a static name nor a globally static expression [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ipshared/a6f3/src/lab2_datapath.vhdl:411]
 WARNING: [Synth 8-9112] actual for formal port 'wraddr' is neither a static name nor a globally static expression [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ipshared/a6f3/src/lab2_datapath.vhdl:418]
-INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:49]
-INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:531' bound to instance 'design_1_i' of component 'design_1' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:84]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:49]
+INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:531' bound to instance 'design_1_i' of component 'design_1' [C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:84]
 INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:569]
-INFO: [Synth 8-3491] module 'design_1_My_Lab2_0_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/synth/design_1_My_Lab2_0_0.vhd:56' bound to instance 'My_Lab2_0' of component 'design_1_My_Lab2_0_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1268]
+INFO: [Synth 8-3491] module 'design_1_My_Lab2_0_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/synth/design_1_My_Lab2_0_0.vhd:56' bound to instance 'My_Lab2_0' of component 'design_1_My_Lab2_0_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1275]
 INFO: [Synth 8-638] synthesizing module 'design_1_My_Lab2_0_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/synth/design_1_My_Lab2_0_0.vhd:94]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
@@ -841,7 +841,7 @@ INFO: [Synth 8-3491] module 'button_debounce' declared at 'c:/Users/jakem/ece383
 INFO: [Synth 8-256] done synthesizing module 'My_Lab2_slave_lite_v1_0_S00_AXI' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ipshared/a6f3/hdl/My_Lab2_slave_lite_v1_0_S00_AXI.vhd:98]
 INFO: [Synth 8-256] done synthesizing module 'My_Lab2' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ipshared/a6f3/hdl/My_Lab2.vhd:60]
 INFO: [Synth 8-256] done synthesizing module 'design_1_My_Lab2_0_0' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/synth/design_1_My_Lab2_0_0.vhd:94]
-INFO: [Synth 8-3491] module 'design_1_axi_smc_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/synth/design_1_axi_smc_0.v:53' bound to instance 'axi_smc' of component 'design_1_axi_smc_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1304]
+INFO: [Synth 8-3491] module 'design_1_axi_smc_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/synth/design_1_axi_smc_0.v:53' bound to instance 'axi_smc' of component 'design_1_axi_smc_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1311]
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/synth/design_1_axi_smc_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'bd_afc3' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:10]
 INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_5Y9LOC' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1098]
@@ -1001,7 +1001,7 @@ INFO: [Synth 8-6155] done synthesizing module 'bd_afc3_woutsw_0' (0#1) [c:/Users
 INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_4N4PBE' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:3079]
 INFO: [Synth 8-6155] done synthesizing module 'bd_afc3' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:10]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_smc_0' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/synth/design_1_axi_smc_0.v:53]
-INFO: [Synth 8-3491] module 'design_1_axi_smc_1_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/synth/design_1_axi_smc_1_0.v:53' bound to instance 'axi_smc_1' of component 'design_1_axi_smc_1_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1366]
+INFO: [Synth 8-3491] module 'design_1_axi_smc_1_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/synth/design_1_axi_smc_1_0.v:53' bound to instance 'axi_smc_1' of component 'design_1_axi_smc_1_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1373]
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_1_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/synth/design_1_axi_smc_1_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'bd_a878' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/bd_a878.v:10]
 INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_G6MO4E' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/bd_a878.v:1052]
@@ -1136,7 +1136,7 @@ WARNING: [Synth 8-7071] port 'M01_SC_B_send' of module 'switchboards_imp_HNDQH4'
 WARNING: [Synth 8-7071] port 'S01_SC_AW_recv' of module 'switchboards_imp_HNDQH4' is unconnected for instance 'switchboards' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/bd_a878.v:978]
 WARNING: [Synth 8-7071] port 'S01_SC_W_recv' of module 'switchboards_imp_HNDQH4' is unconnected for instance 'switchboards' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/bd_a878.v:978]
 WARNING: [Synth 8-7023] instance 'switchboards' of module 'switchboards_imp_HNDQH4' has 77 connections declared, but only 71 given [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/bd_a878.v:978]
-INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/synth/design_1_axi_uartlite_0_0.vhd:59' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1453]
+INFO: [Synth 8-3491] module 'design_1_axi_uartlite_0_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/synth/design_1_axi_uartlite_0_0.vhd:59' bound to instance 'axi_uartlite_0' of component 'design_1_axi_uartlite_0_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1460]
 INFO: [Synth 8-638] synthesizing module 'design_1_axi_uartlite_0_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/synth/design_1_axi_uartlite_0_0.vhd:86]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_S_AXI_ACLK_FREQ_HZ bound to: 100000000 - type: integer 
@@ -1195,7 +1195,7 @@ INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (0#1) [c:/Users/
 INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
 INFO: [Synth 8-256] done synthesizing module 'axi_uartlite' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ipshared/9a87/hdl/axi_uartlite_v2_0_vh_rfs.vhd:2151]
 INFO: [Synth 8-256] done synthesizing module 'design_1_axi_uartlite_0_0' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/synth/design_1_axi_uartlite_0_0.vhd:86]
-INFO: [Synth 8-3491] module 'design_1_clk_wiz_1_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v:66' bound to instance 'clk_wiz_1' of component 'design_1_clk_wiz_1_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1478]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_1_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.v:66' bound to instance 'clk_wiz_1' of component 'design_1_clk_wiz_1_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1485]
 	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
 	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
 	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
@@ -1213,7 +1213,7 @@ INFO: [Synth 8-3491] module 'design_1_clk_wiz_1_0' declared at 'c:/Users/jakem/e
 	Parameter COMPENSATION bound to: ZHOLD - type: string 
 	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
 	Parameter STARTUP_WAIT bound to: FALSE - type: string 
-INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/synth/design_1_mdm_1_0.vhd:59' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1486]
+INFO: [Synth 8-3491] module 'design_1_mdm_1_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/synth/design_1_mdm_1_0.vhd:59' bound to instance 'mdm_1' of component 'design_1_mdm_1_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1493]
 INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/synth/design_1_mdm_1_0.vhd:74]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_DEVICE bound to: xc7a200t - type: string 
@@ -1381,7 +1381,7 @@ INFO: [Synth 8-256] done synthesizing module 'JTAG_CONTROL' (0#1) [c:/Users/jake
 INFO: [Synth 8-256] done synthesizing module 'MDM_Core' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ipshared/da3a/hdl/mdm_v3_2_vh_rfs.vhd:7040]
 INFO: [Synth 8-256] done synthesizing module 'MDM' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ipshared/da3a/hdl/mdm_v3_2_vh_rfs.vhd:14368]
 INFO: [Synth 8-256] done synthesizing module 'design_1_mdm_1_0' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/synth/design_1_mdm_1_0.vhd:74]
-INFO: [Synth 8-3491] module 'design_1_microblaze_0_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:59' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1499]
+INFO: [Synth 8-3491] module 'design_1_microblaze_0_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:59' bound to instance 'microblaze_0' of component 'design_1_microblaze_0_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1506]
 INFO: [Synth 8-638] synthesizing module 'design_1_microblaze_0_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/synth/design_1_microblaze_0_0.vhd:190]
 	Parameter C_SCO bound to: 0 - type: integer 
 	Parameter C_FREQ bound to: 100000000 - type: integer 
@@ -1779,7 +1779,7 @@ INFO: [Synth 8-638] synthesizing module 'design_1_lmb_bram_0' [c:/Users/jakem/ec
 INFO: [Synth 8-3491] module 'blk_mem_gen_v8_4_9' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ipshared/5ec1/hdl/blk_mem_gen_v8_4_vhsyn_rfs.vhd:195208' bound to instance 'U0' of component 'blk_mem_gen_v8_4_9' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:258]
 INFO: [Synth 8-256] done synthesizing module 'design_1_lmb_bram_0' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_lmb_bram_0/synth/design_1_lmb_bram_0.vhd:80]
 INFO: [Synth 8-256] done synthesizing module 'microblaze_0_local_memory_imp_1K0VQXK' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:41]
-INFO: [Synth 8-3491] module 'design_1_mig_7series_0_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0.v:69' bound to instance 'mig_7series_0' of component 'design_1_mig_7series_0_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1652]
+INFO: [Synth 8-3491] module 'design_1_mig_7series_0_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0.v:69' bound to instance 'mig_7series_0' of component 'design_1_mig_7series_0_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1659]
 	Parameter TCQ bound to: 100 - type: integer 
 	Parameter TEMP_MON_CONTROL bound to: INTERNAL - type: string 
 	Parameter XADC_CLK_PERIOD bound to: 5000 - type: integer 
@@ -1810,19 +1810,18 @@ INFO: [Synth 8-3491] module 'design_1_mig_7series_0_0' declared at 'c:/Users/jak
 	Parameter IODELAY_GRP0 bound to: DESIGN_1_MIG_7SERIES_0_0_IODELAY_MIG0 - type: string 
 	Parameter IODELAY_GRP1 bound to: DESIGN_1_MIG_7SERIES_0_0_IODELAY_MIG1 - type: string 
 	Parameter REFCLK_TYPE bound to: NO_BUFFER - type: string 
-	Parameter SYSCLK_TYPE bound to: SINGLE_ENDED - type: string 
+	Parameter SYSCLK_TYPE bound to: NO_BUFFER - type: string 
 	Parameter SYS_RST_PORT bound to: FALSE - type: string 
 	Parameter RST_ACT_LOW bound to: 1 - type: integer 
 	Parameter DIFF_TERM_REFCLK bound to: TRUE - type: string 
 	Parameter FPGA_SPEED_GRADE bound to: 1 - type: integer 
 	Parameter REF_CLK_MMCM_IODELAY_CTRL bound to: FALSE - type: string 
-	Parameter SYSCLK_TYPE bound to: SINGLE_ENDED - type: string 
+	Parameter SYSCLK_TYPE bound to: NO_BUFFER - type: string 
 	Parameter DIFF_TERM_SYSCLK bound to: TRUE - type: string 
-	Parameter IBUF_LOW_PWR bound to: FALSE - type: string 
 	Parameter TCQ bound to: 100 - type: integer 
 	Parameter CLKIN_PERIOD bound to: 10000 - type: integer 
 	Parameter nCK_PER_CLK bound to: 4 - type: integer 
-	Parameter SYSCLK_TYPE bound to: SINGLE_ENDED - type: string 
+	Parameter SYSCLK_TYPE bound to: NO_BUFFER - type: string 
 	Parameter UI_EXTRA_CLOCKS bound to: TRUE - type: string 
 	Parameter CLKFBOUT_MULT bound to: 8 - type: integer 
 	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
@@ -2105,7 +2104,7 @@ WARNING: [Synth 8-567] referenced signal 'not_strict_mode.rd_data_buf_addr_r_lcl
 INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axic_register_slice.v:183]
 WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_r_channel.v:189]
 INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_r_channel.v:315]
-INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_1_100M_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/synth/design_1_rst_clk_wiz_1_100M_0.vhd:59' bound to instance 'rst_clk_wiz_1_100M' of component 'design_1_rst_clk_wiz_1_100M_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1715]
+INFO: [Synth 8-3491] module 'design_1_rst_clk_wiz_1_100M_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/synth/design_1_rst_clk_wiz_1_100M_0.vhd:59' bound to instance 'rst_clk_wiz_1_100M' of component 'design_1_rst_clk_wiz_1_100M_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1722]
 INFO: [Synth 8-638] synthesizing module 'design_1_rst_clk_wiz_1_100M_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/synth/design_1_rst_clk_wiz_1_100M_0.vhd:74]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -2133,7 +2132,7 @@ INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2024.2/scripts
 INFO: [Synth 8-256] done synthesizing module 'lpf__parameterized0' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset__parameterized2' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
 INFO: [Synth 8-256] done synthesizing module 'design_1_rst_clk_wiz_1_100M_0' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/synth/design_1_rst_clk_wiz_1_100M_0.vhd:74]
-INFO: [Synth 8-3491] module 'design_1_rst_mig_7series_0_100M_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/synth/design_1_rst_mig_7series_0_100M_0.vhd:59' bound to instance 'rst_mig_7series_0_100M' of component 'design_1_rst_mig_7series_0_100M_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1728]
+INFO: [Synth 8-3491] module 'design_1_rst_mig_7series_0_100M_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/synth/design_1_rst_mig_7series_0_100M_0.vhd:59' bound to instance 'rst_mig_7series_0_100M' of component 'design_1_rst_mig_7series_0_100M_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1735]
 INFO: [Synth 8-638] synthesizing module 'design_1_rst_mig_7series_0_100M_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/synth/design_1_rst_mig_7series_0_100M_0.vhd:74]
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
@@ -2161,8 +2160,22 @@ INFO: [Synth 8-3491] module 'SRL16' declared at 'C:/Xilinx/Vivado/2024.2/scripts
 INFO: [Synth 8-256] done synthesizing module 'lpf__parameterized1' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:821]
 INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset__parameterized4' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ipshared/0831/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1330]
 INFO: [Synth 8-256] done synthesizing module 'design_1_rst_mig_7series_0_100M_0' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/synth/design_1_rst_mig_7series_0_100M_0.vhd:74]
+INFO: [Synth 8-3491] module 'design_1_util_ds_buf_0_0' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/synth/design_1_util_ds_buf_0_0.vhd:56' bound to instance 'util_ds_buf_0' of component 'design_1_util_ds_buf_0_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1748]
+INFO: [Synth 8-638] synthesizing module 'design_1_util_ds_buf_0_0' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/synth/design_1_util_ds_buf_0_0.vhd:63]
+	Parameter C_SIZE bound to: 1 - type: integer 
+	Parameter C_BUF_TYPE bound to: BUFG - type: string 
+	Parameter C_BUFGCE_DIV bound to: 1 - type: integer 
+	Parameter C_BUFG_GT_SYNC bound to: 0 - type: integer 
+	Parameter C_OBUFDS_GTE5_ADV bound to: 2'b00 
+	Parameter C_REFCLK_ICNTL_TX bound to: 5'b00000 
+	Parameter C_SIM_DEVICE bound to: VERSAL_AI_CORE_ES1 - type: string 
+INFO: [Synth 8-3491] module 'util_ds_buf' declared at 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:73' bound to instance 'U0' of component 'util_ds_buf' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/synth/design_1_util_ds_buf_0_0.vhd:202]
+INFO: [Synth 8-638] synthesizing module 'util_ds_buf' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:252]
+INFO: [Synth 8-113] binding component instance 'BUFG_U' to cell 'BUFG' [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:441]
+INFO: [Synth 8-256] done synthesizing module 'util_ds_buf' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:252]
+INFO: [Synth 8-256] done synthesizing module 'design_1_util_ds_buf_0_0' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/synth/design_1_util_ds_buf_0_0.vhd:63]
 INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:569]
-INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:49]
 WARNING: [Synth 8-6014] Unused sequential element timeOutCnt_reg was removed.  [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ipshared/a6f3/src/TWICtl.vhd:236]
 WARNING: [Synth 8-6014] Unused sequential element errTypeR_reg was removed.  [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ipshared/a6f3/src/TWICtl.vhd:313]
 WARNING: [Synth 8-6014] Unused sequential element regData1_reg was removed.  [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ipshared/a6f3/src/audio_init.v:135]
@@ -2348,126 +2361,163 @@ WARNING: [Synth 8-3848] Net s_axi_ctrl_arvalid in module/entity design_1_mig_7se
 WARNING: [Synth 8-3848] Net s_axi_ctrl_araddr in module/entity design_1_mig_7series_0_0_mig does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0_mig.v:794]
 WARNING: [Synth 8-3848] Net s_axi_ctrl_rready in module/entity design_1_mig_7series_0_0_mig does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0_mig.v:797]
 WARNING: [Synth 8-3848] Net device_temp_i in module/entity design_1_mig_7series_0_0_mig does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0_mig.v:810]
-WARNING: [Synth 8-7129] Port prmry_aclk in module cdc_sync is either unconnected or has no load
-WARNING: [Synth 8-7129] Port prmry_resetn in module cdc_sync is either unconnected or has no load
-WARNING: [Synth 8-7129] Port prmry_vect_in[1] in module cdc_sync is either unconnected or has no load
-WARNING: [Synth 8-7129] Port prmry_vect_in[0] in module cdc_sync is either unconnected or has no load
-WARNING: [Synth 8-7129] Port scndry_resetn in module cdc_sync is either unconnected or has no load
-WARNING: [Synth 8-7129] Port mc_app_rd_last in module mig_7series_v4_2_axi_mc_r_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axlen[7] in module mig_7series_v4_2_axi_mc_wrap_cmd is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axlen[6] in module mig_7series_v4_2_axi_mc_wrap_cmd is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axlen[5] in module mig_7series_v4_2_axi_mc_wrap_cmd is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axlen[4] in module mig_7series_v4_2_axi_mc_wrap_cmd is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axsize[2] in module mig_7series_v4_2_axi_mc_wrap_cmd is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axsize[1] in module mig_7series_v4_2_axi_mc_wrap_cmd is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axsize[0] in module mig_7series_v4_2_axi_mc_wrap_cmd is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axsize[2] in module mig_7series_v4_2_axi_mc_incr_cmd is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axsize[1] in module mig_7series_v4_2_axi_mc_incr_cmd is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axsize[0] in module mig_7series_v4_2_axi_mc_incr_cmd is either unconnected or has no load
-WARNING: [Synth 8-7129] Port axburst[0] in module mig_7series_v4_2_axi_mc_cmd_translator is either unconnected or has no load
-WARNING: [Synth 8-7129] Port arlock[1] in module mig_7series_v4_2_axi_mc_ar_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port arlock[0] in module mig_7series_v4_2_axi_mc_ar_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port arcache[3] in module mig_7series_v4_2_axi_mc_ar_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port arcache[2] in module mig_7series_v4_2_axi_mc_ar_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port arcache[1] in module mig_7series_v4_2_axi_mc_ar_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port arcache[0] in module mig_7series_v4_2_axi_mc_ar_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port arprot[2] in module mig_7series_v4_2_axi_mc_ar_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port arprot[1] in module mig_7series_v4_2_axi_mc_ar_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port arprot[0] in module mig_7series_v4_2_axi_mc_ar_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port b_resp_rdy in module mig_7series_v4_2_axi_mc_b_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port cmd_wr_bytes in module mig_7series_v4_2_axi_mc_w_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port awvalid in module mig_7series_v4_2_axi_mc_w_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port w_ignore_begin in module mig_7series_v4_2_axi_mc_w_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port w_ignore_end in module mig_7series_v4_2_axi_mc_w_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port awlock[1] in module mig_7series_v4_2_axi_mc_aw_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port awlock[0] in module mig_7series_v4_2_axi_mc_aw_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port awcache[3] in module mig_7series_v4_2_axi_mc_aw_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port awcache[2] in module mig_7series_v4_2_axi_mc_aw_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port awcache[1] in module mig_7series_v4_2_axi_mc_aw_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port awcache[0] in module mig_7series_v4_2_axi_mc_aw_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port awprot[2] in module mig_7series_v4_2_axi_mc_aw_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port awprot[1] in module mig_7series_v4_2_axi_mc_aw_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port awprot[0] in module mig_7series_v4_2_axi_mc_aw_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port cmd_wr_bytes in module mig_7series_v4_2_axi_mc_aw_channel is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ACLK in module mig_7series_v4_2_ddr_axic_register_slice__parameterized11 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ARESET in module mig_7series_v4_2_ddr_axic_register_slice__parameterized11 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ACLK in module mig_7series_v4_2_ddr_axic_register_slice__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ARESET in module mig_7series_v4_2_ddr_axic_register_slice__parameterized3 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ACLK in module mig_7series_v4_2_ddr_axic_register_slice__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ARESET in module mig_7series_v4_2_ddr_axic_register_slice__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ACLK in module mig_7series_v4_2_ddr_axic_register_slice__parameterized4 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ARESET in module mig_7series_v4_2_ddr_axic_register_slice__parameterized4 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_AWUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_WUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_ARUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_BUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_RUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ACLK in module mig_7series_v4_2_ddr_axic_register_slice__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ARESET in module mig_7series_v4_2_ddr_axic_register_slice__parameterized2 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ACLK in module mig_7series_v4_2_ddr_axic_register_slice__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ARESET in module mig_7series_v4_2_ddr_axic_register_slice__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_AWUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_WUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_ARUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_BUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_RUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice__parameterized1 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_AWUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_WUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_ARUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_BUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_RUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_AWUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_WUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_ARUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_BUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_RUSER[0] in module mig_7series_v4_2_ddr_axi_register_slice is either unconnected or has no load
-WARNING: [Synth 8-7129] Port cmd_modified in module mig_7series_v4_2_ddr_r_upsizer is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_AXI_RUSER[0] in module mig_7series_v4_2_ddr_r_upsizer is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_AUSER[0] in module mig_7series_v4_2_ddr_a_upsizer__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_WUSER[0] in module mig_7series_v4_2_ddr_w_upsizer is either unconnected or has no load
-WARNING: [Synth 8-7129] Port S_AXI_AUSER[0] in module mig_7series_v4_2_ddr_a_upsizer is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ecc_multiple[7] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ecc_multiple[6] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ecc_multiple[5] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ecc_multiple[4] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ecc_multiple[3] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ecc_multiple[2] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ecc_multiple[1] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ecc_multiple[0] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ecc_single[7] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ecc_single[6] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ecc_single[5] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ecc_single[4] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ecc_single[3] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ecc_single[2] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ecc_single[1] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ecc_single[0] in module mig_7series_v4_2_ui_rd_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port app_raw_not_ecc[7] in module mig_7series_v4_2_ui_wr_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port app_raw_not_ecc[6] in module mig_7series_v4_2_ui_wr_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port app_raw_not_ecc[5] in module mig_7series_v4_2_ui_wr_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port app_raw_not_ecc[4] in module mig_7series_v4_2_ui_wr_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port app_raw_not_ecc[3] in module mig_7series_v4_2_ui_wr_data is either unconnected or has no load
-WARNING: [Synth 8-7129] Port app_raw_not_ecc[2] in module mig_7series_v4_2_ui_wr_data is either unconnected or has no load
+WARNING: [Synth 8-3848] Net IBUF_OUT in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:89]
+WARNING: [Synth 8-3848] Net IBUF_DS_ODIV2 in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:90]
+WARNING: [Synth 8-3848] Net OBUF_DS_P in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:95]
+WARNING: [Synth 8-3848] Net OBUF_DS_N in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:96]
+WARNING: [Synth 8-3848] Net IOBUF_IO_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:103]
+WARNING: [Synth 8-3848] Net BUFGCE_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:115]
+WARNING: [Synth 8-3848] Net BUFH_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:120]
+WARNING: [Synth 8-3848] Net BUFHCE_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:125]
+WARNING: [Synth 8-3848] Net BUFG_FABRIC_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:129]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE5_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:134]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE5_OB in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:135]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE5_ADV_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:140]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE5_ADV_OB in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:141]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE3_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:147]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE3_OB in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:148]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE3_ADV_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:153]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE3_ADV_OB in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:154]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE4_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:160]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE4_OB in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:161]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE4_ADV_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:166]
+WARNING: [Synth 8-3848] Net OBUFDS_GTE4_ADV_OB in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:167]
+WARNING: [Synth 8-3848] Net IBUFDS_GTM_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:171]
+WARNING: [Synth 8-3848] Net IBUFDS_GTM_ODIV2 in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:172]
+WARNING: [Synth 8-3848] Net OBUFDS_GTM_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:178]
+WARNING: [Synth 8-3848] Net OBUFDS_GTM_OB in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:179]
+WARNING: [Synth 8-3848] Net OBUFDS_GTM_ADV_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:186]
+WARNING: [Synth 8-3848] Net OBUFDS_GTM_ADV_OB in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:187]
+WARNING: [Synth 8-3848] Net IBUFDS_GTME5_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:190]
+WARNING: [Synth 8-3848] Net IBUFDS_GTME5_ODIV2 in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:191]
+WARNING: [Synth 8-3848] Net OBUFDS_GTME5_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:199]
+WARNING: [Synth 8-3848] Net OBUFDS_GTME5_OB in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:200]
+WARNING: [Synth 8-3848] Net OBUFDS_GTME5_ADV_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:206]
+WARNING: [Synth 8-3848] Net OBUFDS_GTME5_ADV_OB in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:207]
+WARNING: [Synth 8-3848] Net BUFG_GT_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:217]
+WARNING: [Synth 8-3848] Net BUFG_PS_O in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:221]
+WARNING: [Synth 8-3848] Net MBUFG_GT_O1 in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:233]
+WARNING: [Synth 8-3848] Net MBUFG_GT_O2 in module/entity util_ds_buf does not have driver. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd:234]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-7129] Port IBUF_OUT[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUF_DS_ODIV2[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUF_DS_P[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUF_DS_N[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOBUF_IO_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFGCE_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFH_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFHCE_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFG_FABRIC_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_ADV_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_ADV_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_ADV_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_ADV_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTM_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTM_ODIV2[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_ADV_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_ADV_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTME5_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTME5_ODIV2[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTME5_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTME5_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTME5_ADV_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTME5_ADV_OB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFG_GT_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFG_PS_O[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MBUFG_GT_O1[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MBUFG_GT_O2[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MBUFG_GT_O3[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MBUFG_GT_O4[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MBUFG_PS_O1[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MBUFG_PS_O2[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MBUFG_PS_O3[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port MBUFG_PS_O4[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOBUF_DS_P[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOBUF_DS_N[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOBUF_IO_IO[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUF_DS_P[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUF_DS_N[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUF_DS_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUF_IN[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOBUF_IO_T[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IOBUF_IO_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFGCE_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFGCE_CE[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFGCE_CLR[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFH_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFHCE_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFHCE_CE[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port BUFG_FABRIC_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_I[3] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_I[2] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_I[1] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_RXRECCLKSEL[1] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE5_ADV_RXRECCLKSEL[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_ADV_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_ADV_I[3] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_ADV_I[2] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_ADV_I[1] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE3_ADV_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXRECCLK_SEL_GTE3_ADV[1] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXRECCLK_SEL_GTE3_ADV[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_ADV_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_ADV_I[3] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_ADV_I[2] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_ADV_I[1] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTE4_ADV_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXRECCLK_SEL_GTE4_ADV[1] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RXRECCLK_SEL_GTE4_ADV[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTM_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTM_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTM_IB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_ADV_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_ADV_I[3] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_ADV_I[2] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_ADV_I[1] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTM_ADV_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTME5_CEB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTME5_I[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port IBUFDS_GTME5_IB[0] in module util_ds_buf is either unconnected or has no load
+WARNING: [Synth 8-7129] Port OBUFDS_GTME5_CEB[0] in module util_ds_buf is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:06 ; elapsed = 00:01:15 . Memory (MB): peak = 2120.910 ; gain = 1489.672
+Finished RTL Elaboration : Time (s): cpu = 00:00:59 ; elapsed = 00:01:07 . Memory (MB): peak = 2120.742 ; gain = 1487.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:17 . Memory (MB): peak = 2120.910 ; gain = 1489.672
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:08 . Memory (MB): peak = 2120.742 ; gain = 1487.363
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:08 ; elapsed = 00:01:17 . Memory (MB): peak = 2120.910 ; gain = 1489.672
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:01 ; elapsed = 00:01:08 . Memory (MB): peak = 2120.742 ; gain = 1487.363
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2392.305 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1135 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2390.938 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1134 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/inst_dvid/ODDR2_green' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/inst_dvid/ODDR2_red' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
-WARNING: [Netlist 29-432] The IBUFG primitive 'design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_clk_ibuf/se_input_clk.u_ibufg_sys_clk' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -2502,13 +2552,8 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wra
 Parsing XDC File [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/smartconnect.xdc] for cell 'design_1_i/axi_smc/inst'
 Finished Parsing XDC File [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/smartconnect.xdc] for cell 'design_1_i/axi_smc/inst'
 Parsing XDC File [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc] for cell 'design_1_i/mig_7series_0'
-INFO: [Vivado 12-4777] Setting CLOCK_DEDICATED_ROUTE constraint on the PARENT net instead of the specified net segment (net name: design_1_i/mig_7series_0/sys_clk_i). Placer only honors CLOCK_DEDICATED_ROUTE when set on the PARENT net, e.g. net segment directly connected to the driver. To eliminate this message, please update your constraint to specify the PARENT net instead. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc:41]
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'IOSTANDARD', because the property does not exist for objects of type 'pin'. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc:275]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-CRITICAL WARNING: [Netlist 29-160] Cannot set property 'PACKAGE_PIN', because the property does not exist for objects of type 'pin'. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc:276]
-Resolution: Modify the set_property command to apply the property on the correct object type. Since the property is being applied as a scoped constraint, ensure the proper connectivity of the object port objects can be translated into pin objects. This could be due to the insertion of IO Buffers between the top level terminal and cell pin. If the goal is to apply constraints that will migrate to top level ports it is required that IO Buffers manually be instanced.
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc:361]
-WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc:368]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc:346]
+WARNING: [Designutils 20-1567] Use of 'set_multicycle_path' with '-hold' is not supported by synthesis. The constraint will not be passed to synthesis. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc:353]
 Finished Parsing XDC File [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc] for cell 'design_1_i/mig_7series_0'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
@@ -2550,8 +2595,8 @@ Parsing XDC File [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/des
 Finished Parsing XDC File [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_1_1/clk_wiz_1.xdc] for cell 'design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/Audio_Codec/audiocodec_master_clock/inst'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_1_1/clk_wiz_1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+WARNING: [Designutils 20-1758] instance U0 wraps a black box. Constraint reading is skipped for elaborated designs in this case. Skipping constraint file 'c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc'.
 INFO: [Timing 38-2] Deriving generated clocks
-write_xdc: Time (s): cpu = 00:00:13 ; elapsed = 00:00:10 . Memory (MB): peak = 3049.250 ; gain = 125.207
 Parsing XDC File [C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.srcs/constrs_1/imports/lab2_code_for_cadets_2026/Lab2.xdc]
 WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.srcs/constrs_1/imports/lab2_code_for_cadets_2026/Lab2.xdc:8]
 WARNING: [Vivado 12-584] No ports matched 'reset_n'. [C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.srcs/constrs_1/imports/lab2_code_for_cadets_2026/Lab2.xdc:38]
@@ -2574,14 +2619,13 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wra
 INFO: [Project 1-1714] 113 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 3049.250 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 3050.766 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 654 instances were transformed.
+  A total of 653 instances were transformed.
   FDC_1 => FDCE (inverted pins: C): 1 instance 
   FDR => FDRE: 236 instances
   FDRE_1 => FDRE (inverted pins: C): 1 instance 
   FDS => FDSE: 3 instances
-  IBUFG => IBUF: 1 instance 
   IOBUFDS_DIFF_OUT_INTERMDISABLE => IOBUFDS_DIFF_OUT_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2), INV, OBUFTDS(x2)): 2 instances
   IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
   LUT6_2 => LUT6_2 (LUT5, LUT6): 104 instances
@@ -2596,14 +2640,14 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:02:46 ; elapsed = 00:02:53 . Memory (MB): peak = 3049.250 ; gain = 2418.012
+Finished Constraint Validation : Time (s): cpu = 00:02:21 ; elapsed = 00:02:26 . Memory (MB): peak = 3050.766 ; gain = 2417.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:02:46 ; elapsed = 00:02:53 . Memory (MB): peak = 3049.250 ; gain = 2418.012
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:21 ; elapsed = 00:02:26 . Memory (MB): peak = 3050.766 ; gain = 2417.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -2613,16 +2657,17 @@ Applied set_property IO_BUFFER_TYPE = NONE for DDR3_ck_n[0]. (constraint file  c
 Applied set_property IO_BUFFER_TYPE = NONE for DDR3_ck_p[0]. (constraint file  c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc, line 28).
 Applied set_property keep_hierarchy = soft for design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/mmcm_adv_inst_display_clocks/inst. (constraint file  c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_0_1/clk_wiz_0.xdc, line 53).
 Applied set_property keep_hierarchy = soft for design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/Audio_Codec/audiocodec_master_clock/inst. (constraint file  c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_1_1/clk_wiz_1.xdc, line 53).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0/U0. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 280).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/mdm_1/U0. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 287).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_1/inst. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 292).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_1_100M/U0. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 300).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_0/U0. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 306).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 388).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc_1/inst. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 459).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_mig_7series_0_100M/U0. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 462).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/Audio_Codec/audiocodec_master_clock/inst. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 468).
-Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/mmcm_adv_inst_display_clocks/inst. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 473).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0/U0. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 283).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/mdm_1/U0. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 290).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/clk_wiz_1/inst. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 295).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_clk_wiz_1_100M/U0. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 303).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_uartlite_0/U0. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 309).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 391).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc_1/inst. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 462).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_mig_7series_0_100M/U0. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 465).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/mmcm_adv_inst_display_clocks/inst. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 471).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/Audio_Codec/audiocodec_master_clock/inst. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 476).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_0/U0. (constraint file  C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/dont_touch.xdc, line 483).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/microblaze_0_local_memory/dlmb_v10. (constraint file  auto generated constraint).
@@ -2641,6 +2686,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/rst_mig_7series_0_100M
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/My_Lab2_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/mmcm_adv_inst_display_clocks. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/Audio_Codec/audiocodec_master_clock. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/util_ds_buf_0. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/m00_nodes/m00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/m00_nodes/m00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_smc/inst/m00_nodes/m00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
@@ -2759,7 +2805,7 @@ Applied set_property KEEP = true for sys_clock. (constraint file  auto generated
 Applied set_property KEEP = true for usb_uart_rxd. (constraint file  auto generated constraint).
 Applied set_property KEEP = true for design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/TX. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:47 ; elapsed = 00:02:54 . Memory (MB): peak = 3049.250 ; gain = 2418.012
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:21 ; elapsed = 00:02:27 . Memory (MB): peak = 3050.766 ; gain = 2417.387
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'TWICtl'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'lab2_fsm'
@@ -3158,7 +3204,7 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'tempmon_state_reg' in m
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'mig_7series_v4_2_axi_mc_r_channel'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:57 ; elapsed = 00:04:07 . Memory (MB): peak = 3049.250 ; gain = 2418.012
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:25 ; elapsed = 00:03:33 . Memory (MB): peak = 3050.766 ; gain = 2417.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -3256,25 +3302,25 @@ WARNING: [Synth 8-3332] Sequential element (FSM_sequential_state_reg[0]) is unus
 WARNING: [Synth 8-3332] Sequential element (cw_reg[1]) is unused and will be removed from module button_debounce.
 WARNING: [Synth 8-3332] Sequential element (cw_reg[0]) is unused and will be removed from module button_debounce.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:11:10 ; elapsed = 00:11:43 . Memory (MB): peak = 3049.250 ; gain = 2418.012
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:08:27 ; elapsed = 00:09:01 . Memory (MB): peak = 3050.766 ; gain = 2417.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5578] Moved timing constraint from pin 'microblaze_0/U0/Reset' to pin 'rst_clk_wiz_1_100M/U0/FDRE_inst/Q'
-INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/mig_7series_0/sys_clk_i' to pin 'clkout2_buf/O'
-WARNING: [Synth 8-3321] set_false_path : Empty through list for constraint at line 374 of c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc:374]
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/clk_wiz_1/inst/clk_in1' to pin '{util_ds_buf_0/U0/USE_BUFG.GEN_BUFG[0].BUFG_U/O}'
+WARNING: [Synth 8-3321] set_false_path : Empty through list for constraint at line 359 of c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc. [c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc:359]
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1' to pin 'clkout1_buf/O'
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/Audio_Codec/audiocodec_master_clock/inst/clk_in1' to pin 'clkout1_buf/O'
 INFO: [Synth 8-5819] Moved 4 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:11:21 ; elapsed = 00:11:55 . Memory (MB): peak = 3049.250 ; gain = 2418.012
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:41 ; elapsed = 00:09:16 . Memory (MB): peak = 3050.766 ; gain = 2417.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:11:28 ; elapsed = 00:12:02 . Memory (MB): peak = 3049.250 ; gain = 2418.012
+Finished Timing Optimization : Time (s): cpu = 00:09:13 ; elapsed = 00:09:51 . Memory (MB): peak = 3050.766 ; gain = 2417.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -3285,7 +3331,7 @@ INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_oneh
 INFO: [Synth 8-3332] Sequential element (FSM_sequential_gen_endpoint.w_state_reg[1]) is unused and will be removed from module sc_mmu_v1_0_14_top__parameterized1.
 INFO: [Synth 8-3332] Sequential element (FSM_sequential_gen_endpoint.w_state_reg[0]) is unused and will be removed from module sc_mmu_v1_0_14_top__parameterized1.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:11:44 ; elapsed = 00:12:20 . Memory (MB): peak = 3049.250 ; gain = 2418.012
+Finished Technology Mapping : Time (s): cpu = 00:09:28 ; elapsed = 00:10:08 . Memory (MB): peak = 3050.766 ; gain = 2417.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -3303,37 +3349,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:11:51 ; elapsed = 00:12:27 . Memory (MB): peak = 3049.250 ; gain = 2418.012
+Finished IO Insertion : Time (s): cpu = 00:09:34 ; elapsed = 00:10:14 . Memory (MB): peak = 3050.766 ; gain = 2417.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:11:51 ; elapsed = 00:12:27 . Memory (MB): peak = 3049.250 ; gain = 2418.012
+Finished Renaming Generated Instances : Time (s): cpu = 00:09:34 ; elapsed = 00:10:14 . Memory (MB): peak = 3050.766 ; gain = 2417.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:11:56 ; elapsed = 00:12:32 . Memory (MB): peak = 3049.250 ; gain = 2418.012
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:09:38 ; elapsed = 00:10:18 . Memory (MB): peak = 3050.766 ; gain = 2417.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:11:57 ; elapsed = 00:12:33 . Memory (MB): peak = 3049.250 ; gain = 2418.012
+Finished Renaming Generated Ports : Time (s): cpu = 00:09:38 ; elapsed = 00:10:18 . Memory (MB): peak = 3050.766 ; gain = 2417.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:11:57 ; elapsed = 00:12:34 . Memory (MB): peak = 3049.250 ; gain = 2418.012
+Finished Handling Custom Attributes : Time (s): cpu = 00:09:38 ; elapsed = 00:10:19 . Memory (MB): peak = 3050.766 ; gain = 2417.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:11:58 ; elapsed = 00:12:34 . Memory (MB): peak = 3049.250 ; gain = 2418.012
+Finished Renaming Generated Nets : Time (s): cpu = 00:09:39 ; elapsed = 00:10:19 . Memory (MB): peak = 3050.766 ; gain = 2417.387
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -3351,7 +3397,7 @@ Report Cell Usage:
 +------+-------------------------------+------+
 |1     |AND2B1L                        |    14|
 |2     |BSCANE2                        |     1|
-|3     |BUFG                           |    19|
+|3     |BUFG                           |    20|
 |4     |BUFH                           |     1|
 |5     |BUFIO                          |     1|
 |6     |CARRY4                         |   210|
@@ -3362,10 +3408,10 @@ Report Cell Usage:
 |11    |ISERDESE2                      |    16|
 |12    |LUT1                           |   825|
 |13    |LUT2                           |  1149|
-|14    |LUT3                           |  2804|
-|15    |LUT4                           |  2061|
-|16    |LUT5                           |  2649|
-|17    |LUT6                           |  3917|
+|14    |LUT3                           |  2801|
+|15    |LUT4                           |  2059|
+|16    |LUT5                           |  2655|
+|17    |LUT6                           |  3907|
 |19    |MMCME2_ADV                     |     4|
 |20    |MULT_AND                       |     1|
 |21    |MUXCY                          |   131|
@@ -3401,29 +3447,27 @@ Report Cell Usage:
 |61    |FDS                            |     1|
 |62    |FDSE                           |   458|
 |63    |LD                             |     8|
-|64    |IBUF                           |    15|
-|65    |IBUFG                          |     1|
-|66    |IOBUF                          |     2|
-|67    |IOBUFDS_DIFF_OUT_INTERMDISABLE |     2|
-|68    |IOBUF_INTERMDISABLE            |    16|
-|69    |OBUF                           |    29|
-|70    |OBUFDS                         |     5|
-|71    |OBUFT                          |     2|
+|64    |IBUF                           |    16|
+|65    |IOBUF                          |     2|
+|66    |IOBUFDS_DIFF_OUT_INTERMDISABLE |     2|
+|67    |IOBUF_INTERMDISABLE            |    16|
+|68    |OBUF                           |    29|
+|69    |OBUFDS                         |     5|
+|70    |OBUFT                          |     2|
 +------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:11:58 ; elapsed = 00:12:34 . Memory (MB): peak = 3049.250 ; gain = 2418.012
+Finished Writing Synthesis Report : Time (s): cpu = 00:09:39 ; elapsed = 00:10:19 . Memory (MB): peak = 3050.766 ; gain = 2417.387
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 11418 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:09:31 ; elapsed = 00:11:19 . Memory (MB): peak = 3049.250 ; gain = 1489.672
-Synthesis Optimization Complete : Time (s): cpu = 00:11:58 ; elapsed = 00:12:35 . Memory (MB): peak = 3049.250 ; gain = 2418.012
+Synthesis Optimization Runtime : Time (s): cpu = 00:07:36 ; elapsed = 00:09:20 . Memory (MB): peak = 3050.766 ; gain = 1487.363
+Synthesis Optimization Complete : Time (s): cpu = 00:09:39 ; elapsed = 00:10:20 . Memory (MB): peak = 3050.766 ; gain = 2417.387
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3049.250 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1538 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3050.766 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1537 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/inst_dvid/ODDR2_green' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/inst_dvid/ODDR2_red' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
-WARNING: [Netlist 29-432] The IBUFG primitive 'design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_clk_ibuf/se_input_clk.u_ibufg_sys_clk' has been retargeted to an IBUF primitive only. No BUFG will be added. If a global buffer is intended, please instantiate an available global clock primitive from the current architecture.
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/Audio_Codec/audiocodec_master_clock/inst/clkfb_ibufg 
@@ -3432,10 +3476,10 @@ WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a t
 Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_1_i/My_Lab2_0/U0/My_Lab2_slave_lite_v1_0_S00_AXI_inst/datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clkin1_ibufg 
 Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
-WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_1_i/mig_7series_0/u_design_1_mig_7series_0_0_mig/u_ddr3_clk_ibuf/se_input_clk.u_ibufg_sys_clk 
+WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_1_i/clk_wiz_1/inst/clkin1_ibufg 
 Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
 INFO: [Opt 31-138] Pushed 2 inverter(s) to 16 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 3049.250 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 3050.766 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 644 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 88 instances
@@ -3456,14 +3500,13 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32X1D => RAM32X1D (RAMD32(x2)): 38 instances
   SRL16 => SRL16E: 6 instances
 
-Synth Design complete | Checksum: 2ac65e32
+Synth Design complete | Checksum: 2a0e3360
 INFO: [Common 17-83] Releasing license: Synthesis
-677 Infos, 449 Warnings, 2 Critical Warnings and 0 Errors encountered.
+684 Infos, 485 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:12:19 ; elapsed = 00:13:00 . Memory (MB): peak = 3049.250 ; gain = 2655.484
-INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 3049.250 ; gain = 0.000
+synth_design: Time (s): cpu = 00:09:56 ; elapsed = 00:10:41 . Memory (MB): peak = 3050.766 ; gain = 2656.262
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 3050.766 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/jakem/ece383_wksp/lab3/lab3/lab3.runs/synth_1/design_1_wrapper.dcp' has been generated.
-write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3049.250 ; gain = 0.000
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 3050.766 ; gain = 0.000
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Mar 16 17:27:54 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue Mar 17 14:24:35 2026...

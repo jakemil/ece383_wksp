@@ -112,7 +112,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK_REF_I.FREQ_HZ">100000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.CLK_REF_I.FREQ_HZ">200000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -2629,7 +2629,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SYS_CLK_I.FREQ_HZ">200000000</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SYS_CLK_I.FREQ_HZ">100000000</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -2656,7 +2656,7 @@
         </spirit:parameter>
         <spirit:parameter>
           <spirit:name>CLK_DOMAIN</spirit:name>
-          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SYS_CLK_I.CLK_DOMAIN">/clk_wiz_1_clk_out1</spirit:value>
+          <spirit:value spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.SYS_CLK_I.CLK_DOMAIN">design_1_sys_clock</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -23472,11 +23472,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Mar 16 22:24:54 UTC 2026</spirit:value>
+            <spirit:value>Tue Mar 17 20:12:51 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5923bc7e</spirit:value>
+            <spirit:value>9:88c94562</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -23487,7 +23487,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5923bc7e</spirit:value>
+            <spirit:value>9:88c94562</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -23502,11 +23502,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Mar 16 22:25:20 UTC 2026</spirit:value>
+            <spirit:value>Tue Mar 17 20:13:22 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5923bc7e</spirit:value>
+            <spirit:value>9:88c94562</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -23517,7 +23517,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5923bc7e</spirit:value>
+            <spirit:value>9:88c94562</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -23533,11 +23533,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Mar 16 22:25:07 UTC 2026</spirit:value>
+            <spirit:value>Tue Mar 17 20:13:06 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1691400c</spirit:value>
+            <spirit:value>9:37e4133d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -23553,11 +23553,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Mar 16 22:25:13 UTC 2026</spirit:value>
+            <spirit:value>Tue Mar 17 20:13:13 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:1691400c</spirit:value>
+            <spirit:value>9:37e4133d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -23573,11 +23573,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Mar 16 22:25:01 UTC 2026</spirit:value>
+            <spirit:value>Tue Mar 17 20:12:59 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5923bc7e</spirit:value>
+            <spirit:value>9:88c94562</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -107830,7 +107830,7 @@
         <spirit:name>SYSCLK_TYPE</spirit:name>
         <spirit:displayName>Type of sys clk</spirit:displayName>
         <spirit:description>Type of sys clk</spirit:description>
-        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.SYSCLK_TYPE" spirit:choiceRef="choice_list_1570a756" spirit:configGroups="default">SINGLE</spirit:value>
+        <spirit:value spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.SYSCLK_TYPE" spirit:choiceRef="choice_list_1570a756" spirit:configGroups="default">NOBUF</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="long">
         <spirit:name>USE_AXI</spirit:name>
@@ -115649,7 +115649,7 @@
     <spirit:parameter>
       <spirit:name>XML_INPUT_FILE</spirit:name>
       <spirit:displayName>XML_INPUT_FILE</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.XML_INPUT_FILE" spirit:order="2">board.prj</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.XML_INPUT_FILE" spirit:order="2">mig_a.prj</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>RESET_BOARD_INTERFACE</spirit:name>
@@ -115755,7 +115755,10 @@
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.SUPPORTS_NARROW_BURST" xilinx:valueSource="propagated" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.WUSER_BITS_PER_BYTE" xilinx:valueSource="user_prop" xilinx:valuePermission="bd"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.S_AXI.WUSER_WIDTH" xilinx:valueSource="constant" xilinx:valuePermission="bd"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.BOARD_MIG_PARAM" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.MIG_DONT_TOUCH_PARAM" xilinx:valueSource="user"/>
         <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.RESET_BOARD_INTERFACE" xilinx:valueSource="user"/>
+        <xilinx:configElementInfo xilinx:referenceId="PARAM_VALUE.XML_INPUT_FILE" xilinx:valueSource="user"/>
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
