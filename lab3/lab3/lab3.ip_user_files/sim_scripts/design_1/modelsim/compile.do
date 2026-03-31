@@ -373,40 +373,42 @@ vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../lab3.gen/sources_1/
 "../../../bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_0_1/clk_wiz_0.v" \
 
 vcom -work xil_defaultlib  -93  \
-"../../../bd/design_1/ipshared/a6f3/hdl/My_Lab2_slave_lite_v1_0_S00_AXI.vhd" \
+"../../../bd/design_1/ipshared/5b89/hdl/My_Lab2_slave_lite_v1_0_S00_AXI.vhd" \
 
 vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../lab3.gen/sources_1/bd/design_1/ipshared/3cbc" "+incdir+../../../../lab3.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" "+incdir+../../../../lab3.gen/sources_1/bd/design_1/ipshared/0127/hdl/verilog" "+incdir+../../../../lab3.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_1_1" "+incdir+../../../../lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_0_1" "+incdir+C:/Xilinx/Vivado/2024.2/data/xilinx_vip/include" \
-"../../../bd/design_1/ipshared/a6f3/src/audio_init.v" \
+"../../../bd/design_1/ipshared/5b89/src/audio_init.v" \
 
 vcom -work xil_defaultlib  -93  \
-"../../../bd/design_1/ipshared/a6f3/src/Audio_Codec_Wrapper.vhd" \
-"../../../bd/design_1/ipshared/a6f3/src/ece383_pkg.vhd" \
-"../../../bd/design_1/ipshared/a6f3/src/TWICtl.vhd" \
-"../../../bd/design_1/ipshared/a6f3/src/button_debounce.vhdl" \
-"../../../bd/design_1/ipshared/a6f3/src/color_mapper.vhd" \
-"../../../bd/design_1/ipshared/a6f3/src/counter.vhdl" \
-"../../../bd/design_1/ipshared/a6f3/src/dvid.vhdl" \
-"../../../bd/design_1/ipshared/a6f3/src/flag_register.vhd" \
-"../../../bd/design_1/ipshared/a6f3/src/i2s_ctl.vhd" \
-"../../../bd/design_1/ipshared/a6f3/src/numeric_stepper.vhd" \
+"../../../bd/design_1/ipshared/5b89/src/Audio_Codec_Wrapper.vhd" \
+"../../../bd/design_1/ipshared/5b89/src/ece383_pkg.vhd" \
+"../../../bd/design_1/ipshared/5b89/src/TWICtl.vhd" \
+"../../../bd/design_1/ipshared/5b89/src/button_debounce.vhdl" \
+"../../../bd/design_1/ipshared/5b89/src/color_mapper.vhd" \
+"../../../bd/design_1/ipshared/5b89/src/counter.vhdl" \
+"../../../bd/design_1/ipshared/5b89/src/dvid.vhdl" \
+"../../../bd/design_1/ipshared/5b89/src/flag_register.vhd" \
+"../../../bd/design_1/ipshared/5b89/src/i2s_ctl.vhd" \
+"../../../bd/design_1/ipshared/5b89/src/numeric_stepper.vhd" \
 
 vcom -work xil_defaultlib  -2008  \
-"../../../bd/design_1/ipshared/a6f3/src/lab2_datapath.vhdl" \
+"../../../bd/design_1/ipshared/5b89/src/lab2_datapath.vhdl" \
 
 vcom -work xil_defaultlib  -93  \
-"../../../bd/design_1/ipshared/a6f3/src/lab2_fsm.vhdl" \
-"../../../bd/design_1/ipshared/a6f3/src/lec10.vhdl" \
-"../../../bd/design_1/ipshared/a6f3/src/tdms.vhdl" \
-"../../../bd/design_1/ipshared/a6f3/src/trigger_detector.vhd" \
+"../../../bd/design_1/ipshared/5b89/src/lab2_fsm.vhdl" \
+"../../../bd/design_1/ipshared/5b89/src/lec10.vhdl" \
+"../../../bd/design_1/ipshared/5b89/src/tdms.vhdl" \
+"../../../bd/design_1/ipshared/5b89/src/trigger_detector.vhd" \
 
 vcom -work xil_defaultlib  -2008  \
-"../../../bd/design_1/ipshared/a6f3/src/vga_signal_generator.vhd" \
-"../../../bd/design_1/ipshared/a6f3/src/vga.vhd" \
-"../../../bd/design_1/ipshared/a6f3/src/video.vhdl" \
+"../../../bd/design_1/ipshared/5b89/src/vga_signal_generator.vhd" \
+"../../../bd/design_1/ipshared/5b89/src/vga.vhd" \
+"../../../bd/design_1/ipshared/5b89/src/video.vhdl" \
 
 vcom -work xil_defaultlib  -93  \
-"../../../bd/design_1/ipshared/a6f3/hdl/My_Lab2.vhd" \
+"../../../bd/design_1/ipshared/5b89/hdl/My_Lab2.vhd" \
 "../../../bd/design_1/ip/design_1_My_Lab2_0_0/sim/design_1_My_Lab2_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_0_0/util_ds_buf.vhd" \
+"../../../bd/design_1/ip/design_1_util_ds_buf_0_0/sim/design_1_util_ds_buf_0_0.vhd" \
 "../../../bd/design_1/sim/design_1.vhd" \
 
 vlog -work xil_defaultlib \

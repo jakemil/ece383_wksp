@@ -809,7 +809,7 @@
       },
       "My_Lab2_0": {
         "vlnv": "xilinx.com:user:My_Lab2:1.0",
-        "ip_revision": "5",
+        "ip_revision": "6",
         "xci_name": "design_1_My_Lab2_0_0",
         "xci_path": "ip\\design_1_My_Lab2_0_0\\design_1_My_Lab2_0_0.xci",
         "inst_hier_path": "My_Lab2_0"
@@ -970,8 +970,8 @@
           "microblaze_0/Clk",
           "microblaze_0_local_memory/LMB_Clk",
           "axi_smc_1/aclk",
-          "My_Lab2_0/s00_axi_aclk",
-          "rst_clk_wiz_1_100M/slowest_sync_clk"
+          "rst_clk_wiz_1_100M/slowest_sync_clk",
+          "My_Lab2_0/s00_axi_aclk"
         ]
       },
       "clk_wiz_1_clk_out2": {

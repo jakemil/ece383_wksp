@@ -85,7 +85,7 @@ module design_1_mig_7series_0_0 (
   output [0:0]       ddr3_odt,
   // Inputs
   // Single-ended system clock
-  input         sys_clk_i,
+  input             sys_clk_i,
   // Single-ended iodelayctrl clk (reference clock)
   input             clk_ref_i,
   // user interface signals

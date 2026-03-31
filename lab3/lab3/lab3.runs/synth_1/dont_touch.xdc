@@ -270,11 +270,11 @@ set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_rs
 # IP: bd/design_1/ip/design_1_My_Lab2_0_0/design_1_My_Lab2_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_My_Lab2_0_0 || ORIG_REF_NAME==design_1_My_Lab2_0_0} -quiet] -quiet
 
-# IP: c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_0_1/clk_wiz_0.xci
-set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] -quiet
-
 # IP: c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_1_1/clk_wiz_1.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==clk_wiz_1 || ORIG_REF_NAME==clk_wiz_1} -quiet] -quiet
+
+# IP: c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_0_1/clk_wiz_0.xci
+set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] -quiet
 
 # IP: bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0.xci
 set_property KEEP_HIERARCHY SOFT [get_cells -hier -filter {REF_NAME==design_1_util_ds_buf_0_0 || ORIG_REF_NAME==design_1_util_ds_buf_0_0} -quiet] -quiet
@@ -467,15 +467,15 @@ set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filte
 # XDC: c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/design_1_rst_mig_7series_0_100M_0.xdc
 #dup# set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==design_1_rst_mig_7series_0_100M_0 || ORIG_REF_NAME==design_1_rst_mig_7series_0_100M_0} -quiet] {/U0 } ]/U0 ] -quiet] -quiet
 
-# XDC: c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_0_1/clk_wiz_0.xdc
-set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
-
-# XDC: c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_0_1/clk_wiz_0_ooc.xdc
-
 # XDC: c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_1_1/clk_wiz_1.xdc
 set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_wiz_1 || ORIG_REF_NAME==clk_wiz_1} -quiet] {/inst } ]/inst ] -quiet] -quiet
 
 # XDC: c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_1_1/clk_wiz_1_ooc.xdc
+
+# XDC: c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_0_1/clk_wiz_0.xdc
+set_property KEEP_HIERARCHY SOFT [get_cells [split [join [get_cells -hier -filter {REF_NAME==clk_wiz_0 || ORIG_REF_NAME==clk_wiz_0} -quiet] {/inst } ]/inst ] -quiet] -quiet
+
+# XDC: c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_My_Lab2_0_0/src/clk_wiz_0_1/clk_wiz_0_ooc.xdc
 
 # XDC: c:/Users/jakem/ece383_wksp/lab3/lab3/lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_ooc.xdc
 

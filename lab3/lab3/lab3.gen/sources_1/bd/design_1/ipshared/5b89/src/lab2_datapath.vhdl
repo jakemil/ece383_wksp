@@ -432,6 +432,9 @@ begin
     
     tr_volt <= std_logic_vector(trigger.v);
     tr_time <= std_logic_vector(trigger.t);
+    
+    Lbus_out <= make_unsigned(ch1.from_ac(17 downto 2));
+    Rbus_out <= make_unsigned(ch2.from_ac(17 downto 2));
 
 end lab2_datapath_arch;
 
