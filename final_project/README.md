@@ -145,6 +145,22 @@ Implement game state transitions and the scrolling effect. Lasers move across th
 - Some issues came about throughout the process, like the counter updating too quickly because improper implementation with the clock divider and the speed of scrolling/thrust mechanics of Barry. This required some tweaks to get the gameplay as close as possible to the mobile app. In total, 5 diffent microblaze projects were created and many bitstreams attempted. 
 - In total, the vhdl implementation of jetpack joyride is fairly well emulated, with some missing functionality to include coins, scientists, etc. which can be added or attempted in the future.
 
+---
+
+## Appendix A
+- To set up a working demo, open the project in vivado and generate a bitstream
+- go to file -> export -> hardware -> include bitsteam and save
+- open Vitis and make a new application project
+- select the exported hardware and create the application project with hello_world.c
+- remove drives from the hw folder, delete the custom IP, and remove line 8 of the makefile
+- import or copy/paste hello_world.c and build then run on hardware
+- this should have the final project uploaded to the board
+- press start to begin the game, and use A on the NES to boost
+- press start if you die to reset the game
+- HAVE FUN!
+
+
+---
 
 ## Documentation Statement
 
