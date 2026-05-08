@@ -1,0 +1,87 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.896906",
+   "Default View_TopLeft":"410,-288",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.8.0 2024-04-26 e1825d835c VDI=44 GEI=38 GUI=JA:21.0
+#  -string -flagsOSRD
+preplace port usb_uart -pg 1 -lvl 8 -x 2790 -y -30 -defaultsOSRD
+preplace port DDR3 -pg 1 -lvl 8 -x 2790 -y -150 -defaultsOSRD
+preplace port port-id_reset -pg 1 -lvl 0 -x -80 -y -140 -defaultsOSRD
+preplace port port-id_sda -pg 1 -lvl 8 -x 2790 -y 450 -defaultsOSRD
+preplace port port-id_scl -pg 1 -lvl 8 -x 2790 -y 490 -defaultsOSRD
+preplace port port-id_ac_lrclk -pg 1 -lvl 8 -x 2790 -y 360 -defaultsOSRD
+preplace port port-id_ac_bclk -pg 1 -lvl 8 -x 2790 -y 420 -defaultsOSRD
+preplace port port-id_ac_dac_sdata -pg 1 -lvl 8 -x 2790 -y 390 -defaultsOSRD
+preplace port port-id_ac_mclk -pg 1 -lvl 8 -x 2790 -y -280 -defaultsOSRD
+preplace port port-id_ac_adc_sdata -pg 1 -lvl 0 -x -80 -y 300 -defaultsOSRD
+preplace port port-id_sys_clock -pg 1 -lvl 0 -x -80 -y 30 -defaultsOSRD
+preplace port port-id_nes_data -pg 1 -lvl 0 -x -80 -y -40 -defaultsOSRD
+preplace port port-id_nes_latch -pg 1 -lvl 8 -x 2790 -y 220 -defaultsOSRD
+preplace port port-id_nes_pulse -pg 1 -lvl 8 -x 2790 -y 250 -defaultsOSRD
+preplace portBus tmdsb -pg 1 -lvl 8 -x 2790 -y 280 -defaultsOSRD
+preplace portBus tmds -pg 1 -lvl 8 -x 2790 -y 190 -defaultsOSRD
+preplace portBus switch -pg 1 -lvl 0 -x -80 -y 200 -defaultsOSRD
+preplace portBus btn -pg 1 -lvl 0 -x -80 -y 160 -defaultsOSRD
+preplace inst microblaze_0 -pg 1 -lvl 5 -x 1630 -y 170 -defaultsOSRD
+preplace inst microblaze_0_local_memory -pg 1 -lvl 6 -x 2140 -y 130 -defaultsOSRD
+preplace inst mdm_1 -pg 1 -lvl 5 -x 1630 -y 360 -defaultsOSRD
+preplace inst clk_wiz_1 -pg 1 -lvl 5 -x 1630 -y -10 -defaultsOSRD
+preplace inst rst_clk_wiz_1_100M -pg 1 -lvl 6 -x 2140 -y -40 -defaultsOSRD
+preplace inst axi_uartlite_0 -pg 1 -lvl 3 -x 720 -y -50 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 7 -x 2510 -y -120 -defaultsOSRD
+preplace inst mig_7series_0 -pg 1 -lvl 2 -x 370 -y -100 -defaultsOSRD
+preplace inst axi_smc_1 -pg 1 -lvl 7 -x 2510 -y 160 -defaultsOSRD
+preplace inst rst_mig_7series_0_100M -pg 1 -lvl 3 -x 720 -y 190 -defaultsOSRD
+preplace inst My_Lab2_0 -pg 1 -lvl 4 -x 1100 -y 160 -defaultsOSRD
+preplace inst util_ds_buf_0 -pg 1 -lvl 1 -x 80 -y 30 -defaultsOSRD
+preplace netloc My_Lab2_0_ac_bclk 1 4 4 1230J -330 NJ -330 NJ -330 2760J
+preplace netloc My_Lab2_0_ac_dac_sdata 1 4 4 1240J -320 NJ -320 NJ -320 2750J
+preplace netloc My_Lab2_0_ac_lrclk 1 4 4 1260J -310 NJ -310 NJ -310 2740J
+preplace netloc My_Lab2_0_ac_mclk 1 4 4 1250J -300 NJ -300 NJ -300 2770J
+preplace netloc My_Lab2_0_flagQ 1 4 1 1370 150n
+preplace netloc My_Lab2_0_nes_latch 1 4 4 1360J -290 NJ -290 NJ -290 2730J
+preplace netloc My_Lab2_0_nes_pulse 1 4 4 1230J 270 NJ 270 NJ 270 2730J
+preplace netloc My_Lab2_0_tmds 1 4 4 1330J -270 NJ -270 NJ -270 2720J
+preplace netloc My_Lab2_0_tmdsb 1 4 4 1320J -280 NJ -280 NJ -280 2710J
+preplace netloc Net 1 4 4 1340J -260 NJ -260 NJ -260 2680J
+preplace netloc Net1 1 4 4 1350J -250 NJ -250 NJ -250 2670J
+preplace netloc ac_adc_sdata_0_1 1 0 4 -60J -30 190 50 NJ 50 950J
+preplace netloc btn_0_1 1 0 4 NJ 160 220 90 NJ 90 900J
+preplace netloc clk_wiz_1_clk_out1 1 2 5 550 40 960 -10 1380 -100 1950 -160 2360
+preplace netloc clk_wiz_1_clk_out2 1 1 5 250 -220 NJ -220 930J -200 NJ -200 1860
+preplace netloc clk_wiz_1_locked 1 5 1 1860 0n
+preplace netloc mdm_1_debug_sys_rst 1 5 1 1930 -20n
+preplace netloc mig_7series_0_mmcm_locked 1 2 1 490 -70n
+preplace netloc mig_7series_0_ui_clk 1 2 5 530 -140 NJ -140 N -140 1880J -190 2370
+preplace netloc mig_7series_0_ui_clk_sync_rst 1 2 1 500 -130n
+preplace netloc nes_data_0_1 1 0 4 NJ -40 200J 70 NJ 70 920J
+preplace netloc reset_1 1 0 6 NJ -140 220 -210 N -210 900 -160 1300 -90 1880J
+preplace netloc rst_clk_wiz_1_100M_bus_struct_reset 1 5 2 1970 -150 2310J
+preplace netloc rst_clk_wiz_1_100M_mb_reset 1 4 3 1390 -120 1900J -170 2320
+preplace netloc rst_clk_wiz_1_100M_peripheral_aresetn 1 2 5 540 -130 940J -130 N -130 1890J -180 2330
+preplace netloc rst_mig_7series_0_100M_peripheral_aresetn 1 1 3 250 60 NJ 60 890
+preplace netloc switch_0_1 1 0 4 NJ 200 190 80 NJ 80 910J
+preplace netloc sys_clock_1 1 0 1 N 30
+preplace netloc util_ds_buf_0_BUFG_O 1 1 4 240 30 N 30 950 0 N
+preplace netloc axi_smc_1_M00_AXI 1 1 7 240 -230 NJ -230 NJ -230 1270 -220 NJ -220 NJ -220 2660
+preplace netloc axi_smc_M00_AXI 1 2 6 550 -240 NJ -240 N -240 NJ -240 NJ -240 2640
+preplace netloc axi_smc_M01_AXI 1 3 5 970 -220 1280J -230 NJ -230 NJ -230 2650
+preplace netloc axi_uartlite_0_UART 1 3 5 890J -170 1270 -210 NJ -210 NJ -210 2700J
+preplace netloc microblaze_0_M_AXI_DC 1 5 2 1900J 210 2340
+preplace netloc microblaze_0_M_AXI_DP 1 5 2 1910J -140 N
+preplace netloc microblaze_0_M_AXI_IC 1 5 2 1880J 220 2380
+preplace netloc microblaze_0_debug 1 4 2 1400 70 1860J
+preplace netloc microblaze_0_dlmb_1 1 5 1 1920 100n
+preplace netloc microblaze_0_ilmb_1 1 5 1 1960 120n
+preplace netloc mig_7series_0_DDR3 1 2 6 NJ -150 NJ -150 1310 -190 1870J -200 NJ -200 2690J
+levelinfo -pg 1 -80 80 370 720 1100 1630 2140 2510 2790
+pagesize -pg 1 -db -bbox -sgen -230 -350 2930 810
+"
+}
+{
+   "da_axi4_cnt":"3",
+   "da_board_cnt":"5",
+   "da_clkrst_cnt":"11",
+   "da_mb_cnt":"1"
+}
